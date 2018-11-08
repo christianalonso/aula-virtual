@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+body, html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.contendor-cabezera, .cabezera {
+  display: flex;
+}
+
+.contenedor-cabezera {
+  height: 70px;
+  background: tomato;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+.cabezera {
+  height: 100%;
+  background: #363333;
+  padding: 0 2em;
+  width: 100%;
+  position: relative;
+}
+
+.logo, .items {
+  height: 100%;
+  display: flex;
+}
+
+.logo {
+  width: 30%;
+  background: red;
+}
+
+.items {
+  width: 70%;
+  justify-content: flex-end;
+  align-items: center;
+  overflow: hidden;
+}
+.items a {
+  padding: 1.5em 1.5em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.caja-iniciosesion {
+  width: 220px;
+  height: 210px;
+  background: #fff;
+  position: fixed;
+  top: 70px;
+  right: 25px;
+  z-index: 40;
+  box-shadow: 0 0 2px 1px #aaa;
+}
+.caja-iniciosesion:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  position: absolute;
+  top: -15px;
+  right: 65px;
+  z-index: -1;
+  box-shadow: 0 0 2px 1px #aaa;
+  -webkit-transform: rotate(45deg);
+}
+
+.inicio-sesion, .cajas, .btn-sesion.opciones {
+  width: 100%;
+}
+
+.inicio-sesion {
+  height: 100%;
+  padding: .6em .6em;
+  background: #fff;
+}
+
+.margen {
+  margin-bottom: 10px;
+}
+
+.cajas .caja-sesion {
+  width: 100%;
+  font-size: 14px;
+  padding: 0 .3em;
+  height: 32px;
+}
+.cajas small {
+  color: #dc3545;
+}
+
+.btn-sesion {
+  padding: .6em 0;
+  display: flex;
+  justify-content: center;
+}
+.btn-sesion button {
+  padding: .2em 2em;
+  border-radius: 20px;
+  outline: none;
+  background: #363333;
+  border: none;
+  color: #fff;
+}
+
+.opciones {
+  text-align: center;
+}
+.opciones a {
+  color: #363333;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=cabezera_login.css.map */

@@ -1,0 +1,97 @@
+$plomo1:#363333;
+$plomo2:#504C4C;
+$plomo3:#706B6B;
+.notas{
+	//background: orange;
+	background: #fff;
+	padding: 1em 2em;
+	display: flex;
+}
+.title-nota{
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	width: 100%;
+	color: $plomo1;
+}
+.cuadro-notas{
+	padding-right: .6em;
+	background: #fff;
+	width: 50%;
+}
+.cuadro-cursos-prof{
+	padding-left: .6em;
+	padding-top: 6em;
+	background: #fff;
+	width: 50%;
+}
+.cabezera-cuadro{
+	width: 100%;
+	//background: steelblue;
+	display: flex;
+	justify-content:space-between;
+	padding: 0 1.5em;
+	padding-top: 1.5em;
+	padding-bottom: 10px;
+
+	& label{
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+}
+.bordes{
+	width: 100%;
+	//background: green;
+	box-shadow: 0 0 0 2px $plomo3;
+	display: flex;
+}
+.cuadro-modulo,.cuadro-puntos{
+	width: 50%;
+	
+	& ul{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+		margin: 5px 0;
+	}
+	& li{
+		line-height: 3em;
+		font-size: 13.5px;
+	}
+}
+.cuadro-modulo{
+	padding-left: 1.5em;
+	//background: pink;
+	border-right: 2px solid $plomo3;	
+	
+}
+.cuadro-puntos{
+	//background: yellow;
+	display: flex;
+	justify-content:flex-end;
+	padding-right: 1.5em;
+}
+
+.cuadro-cursos{
+	margin-bottom: 50px;
+}
+
+
+.cuadro-cursos, .cuadro-prof{
+	width: 100%;
+	//background: red;
+	padding: 0 1em;
+	box-shadow: 0 0 0 1px $plomo3;
+	& ul{
+		list-style: none;
+		padding: 0;
+		margin-bottom: 0;
+		padding: .5em 0;
+		
+	}
+	& li{
+		line-height: 2.5em;
+		font-size: 15px;
+	}
+
+}

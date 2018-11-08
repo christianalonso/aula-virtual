@@ -1,0 +1,22 @@
+.contenedor{
+	width: 100%;
+	background: steelblue;
+	padding-top: 70px;
+	padding-bottom: 10px;
+	//height: 100%;
+}
+.separacion{
+	width: 100%;
+	display: flex;
+	justify-content:flex-end;
+}
+.contenedor-menu{
+	width: 220px;
+	background: orange;
+	position: relative;
+}
+.contenedor-items{
+	width: calc(100% - 220px);
+	padding: .5em 0;
+	background: blue;
+}

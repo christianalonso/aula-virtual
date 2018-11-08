@@ -1,0 +1,92 @@
+.notas {
+  background: #fff;
+  padding: 1em 2em;
+  display: flex;
+}
+
+.title-nota {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  width: 100%;
+  color: #363333;
+}
+
+.cuadro-notas {
+  padding-right: .6em;
+  background: #fff;
+  width: 50%;
+}
+
+.cuadro-cursos-prof {
+  padding-left: .6em;
+  padding-top: 6em;
+  background: #fff;
+  width: 50%;
+}
+
+.cabezera-cuadro {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 10px;
+}
+.cabezera-cuadro label {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.bordes {
+  width: 100%;
+  box-shadow: 0 0 0 2px #706B6B;
+  display: flex;
+}
+
+.cuadro-modulo, .cuadro-puntos {
+  width: 50%;
+}
+.cuadro-modulo ul, .cuadro-puntos ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  margin: 5px 0;
+}
+.cuadro-modulo li, .cuadro-puntos li {
+  line-height: 3em;
+  font-size: 13.5px;
+}
+
+.cuadro-modulo {
+  padding-left: 1.5em;
+  border-right: 2px solid #706B6B;
+}
+
+.cuadro-puntos {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1.5em;
+}
+
+.cuadro-cursos {
+  margin-bottom: 50px;
+}
+
+.cuadro-cursos, .cuadro-prof {
+  width: 100%;
+  padding: 0 1em;
+  box-shadow: 0 0 0 1px #706B6B;
+}
+.cuadro-cursos ul, .cuadro-prof ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+  padding: .5em 0;
+}
+.cuadro-cursos li, .cuadro-prof li {
+  line-height: 2.5em;
+  font-size: 15px;
+}
+
+/*# sourceMappingURL=misnotas.css.map */

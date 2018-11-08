@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAGA,YAAY;EACX,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,IAAI;EAChB,OAAO,EAAE,IAAI;EACb,qBAAqB,EAAE,0BAA0B;EACjD,QAAQ,EAAC,IAAI;;;AAEd,kDAAiD;EAChD,KAAK,EAAE,IAAI;EACX,UAAU,EAXH,OAAO;;;AAaf,2BAA2B;EAC1B,OAAO,EAAE,OAAO",
+"sources": ["../scss/miscursos.scss"],
+"names": [],
+"file": "miscursos.css"
+}

@@ -1,0 +1,111 @@
+.title-imgtestimonio, .title-testimonio, .enlace-testimonio {
+  width: 100%;
+  display: flex;
+}
+
+.title-imgtestimonio {
+  height: 120px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  padding: 0 2em;
+  flex-wrap: wrap;
+}
+
+.title-testimonio, .enlace-testimonio {
+  justify-content: center;
+  align-items: center;
+}
+
+.title-testimonio {
+  font-size: 35px;
+  color: #fff;
+}
+.title-testimonio label {
+  margin-bottom: 0;
+}
+
+.btn-tipoenlace {
+  background: #363333;
+  color: #fff;
+  padding: .5em 1em;
+  border-radius: 50px;
+}
+.btn-tipoenlace:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contenedor-testimonio {
+  width: 100%;
+  background: #fff;
+  padding: 1.5em 3em;
+}
+
+.title-items {
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.title-items label {
+  margin-bottom: 0;
+}
+
+.contenedor-cajas {
+  width: 100%;
+  padding: 1.5em .5em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caja-testimonio {
+  width: 50%;
+  padding: 1em 4em;
+}
+.caja-testimonio:nth-child(odd) {
+  border-right: 1px solid #504C4C;
+}
+
+.testimonio {
+  width: 100%;
+  background: #fff;
+  padding: .8em .5em;
+  position: relative;
+  box-shadow: 0 0 0 1px #504C4C inset;
+}
+.testimonio label, .testimonio p {
+  padding-left: .6em;
+}
+.testimonio label {
+  padding-top: .5em;
+  font-size: 15px;
+}
+.testimonio p {
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+.testimonio:before {
+  content: "";
+  width: 100%;
+  height: 22px;
+  background: #504C4C;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.circulo {
+  height: 65px;
+  width: 65px;
+  background: #504C4C;
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  border-radius: 50px;
+}
+
+/*# sourceMappingURL=testimonio.css.map */

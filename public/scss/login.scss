@@ -1,0 +1,44 @@
+
+.caja-cursos{
+	padding: 2em 0;
+	background: #fff;
+	display: grid;
+	grid-template-columns: calc(33.33% - 8px) 1fr 1fr;x
+	grid-gap:10px;
+}
+
+.img-login{
+	height: 400px;
+	width: 100%;
+	background: #504C4C;
+	position: relative;
+	overflow: hidden;
+	
+	& img{
+		width: 100%;
+	}
+}
+.title-imglogin{
+	position: absolute;
+	width: 60%;
+	//background: red;
+	height: 80px;
+	top: 0px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	padding: .4em 0;
+}
+.title{
+	width: 100%;
+	//background: blue;
+	padding: .5em 0;
+	text-align: center;
+
+	& label{
+		font-size: 35px;
+		margin-bottom: 0;
+		color: #fff;
+	}
+}

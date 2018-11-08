@@ -1,0 +1,65 @@
+.menu {
+  width: 220px;
+  height: 100%;
+  position: fixed;
+  background: #706B6B;
+}
+
+.usuario-login {
+  width: 100%;
+  height: 180px;
+  padding: .9em 0;
+  border-bottom: 1px solid #fff;
+}
+
+.contenedor-imgusuario, .img-usuario {
+  width: 100%;
+}
+
+.contenedor-imgusuario {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-usuario {
+  width: 90px;
+  height: 90px;
+  background: #fff;
+  border-radius: 50px;
+}
+
+.tipo-usuario {
+  height: 30px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+}
+
+.menu-items {
+  padding: .9em 0;
+  width: 100%;
+  height: calc(100% - 179px);
+  font-size: 17px;
+}
+.menu-items ul {
+  padding: 0;
+}
+.menu-items li {
+  list-style: none;
+  padding-left: 2.8em;
+  line-height: 2.8em;
+}
+.menu-items a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+.menu-items a i {
+  position: relative;
+  top: -3px;
+  font-size: 9px;
+}
+
+/*# sourceMappingURL=menu.css.map */

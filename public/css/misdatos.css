@@ -1,0 +1,92 @@
+.datos {
+  background: white;
+  width: 100%;
+  padding: 2em 3em;
+  display: flex;
+}
+
+.campos, .foto {
+  width: 50%;
+}
+
+.foto {
+  padding-top: 3em;
+  padding-left: 2em;
+}
+
+.title-datos {
+  font-size: 18px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.campo-dato {
+  width: 100%;
+  padding: .2em 0;
+  padding-left: 5.5em;
+}
+.campo-dato label, .campo-dato .txt-dato, .campo-dato .btn-dato {
+  font-size: 15px;
+}
+.campo-dato label {
+  width: 100%;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+.campo-dato .txt-dato, .campo-dato .btn-dato {
+  border-radius: 5px;
+}
+.campo-dato .txt-dato {
+  width: 70%;
+  max-width: 310px;
+  height: 25px;
+  padding: .4em .3em;
+  border: 1px solid #706B6B;
+}
+.campo-dato .btn-dato {
+  margin: 1.5em 0;
+  border: none;
+  padding: .2em .8em;
+  color: #fff;
+  background: #363333;
+}
+
+.margen-foto {
+  width: 220px;
+  height: 190px;
+  background: #706B6B;
+  padding: 0 .8em;
+  padding-top: .8em;
+  border-radius: 20px;
+}
+
+.foto-usuario {
+  width: 100%;
+  height: 140px;
+  background: white;
+  border-radius: 15px;
+}
+
+.content-agregar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: .2em;
+}
+
+.agregar {
+  width: 25px;
+  height: 25px;
+  background: #504C4C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.agregar label {
+  margin-bottom: 0;
+  font-size: 20px;
+  color: #fff;
+}
+
+/*# sourceMappingURL=misdatos.css.map */

@@ -1,0 +1,118 @@
+.contenedor-cursodestacado,.title-cursodescatado,.caja-cursos{
+	width: 100%;
+}
+.contenedor-cursodestacado{
+	
+	padding: 2.5em 3em;
+	background: #fff;
+}
+
+.title-cursodescatado{
+	
+	background: #fff;
+	text-align: center;
+	padding: .5em 0;
+	& label{
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+}
+.info-curso{
+	background: #fff;
+	width: 100%;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 0 1px black;
+
+	& .img-curso{
+		width: 100%;
+		//background: steelblue;
+	}
+
+	& img{
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	& .title-texcurso{
+		width: 100%;
+		//background: red;
+		padding: .3em .6em;
+
+		& label{
+			margin-bottom: 0;
+			font-weight: bold;
+			color: #363333;
+		}
+	}
+}
+.detalle-curso{
+	width: 100%;
+	//background: tomato;
+	padding: .4em .6em;
+	display: flex;
+	justify-content:space-between;
+
+	& label{
+		font-size: 14px;
+		margin-bottom: 0;
+		color: #363333;
+	}
+
+	& span{
+		color: transparent;
+	}
+
+	& a:hover{
+		text-decoration: none;
+		color: #363333;
+	}
+	
+
+}
+.profesor{
+	position: relative;
+	//background: red;
+	padding-left: 1.8em;
+
+	& i{
+		font-size: 20px;
+		position: absolute;
+		left: 0;
+	}
+}
+.precio-curso{
+	//background: orange;
+	padding: .1em .5em;
+	box-shadow: 0 0 0 1px #363333;
+	border-radius: 9px;
+	font-size: 14px;
+	color: #363333;
+
+}
+.title-imgcurso{
+	//background: red;
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	display: flex;
+	justify-content:center;
+	align-items:center;
+
+}
+.title-curso{
+	font-size: 35px;
+	color: #fff;
+	& label{
+		margin-bottom: 0;
+	}
+}

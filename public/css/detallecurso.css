@@ -1,0 +1,114 @@
+.caja-cursos {
+  padding: 2em 0;
+  background: #fff;
+  display: grid;
+  grid-template-columns: calc(33.33% - 8px) 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.cabezera-informacion-vacia, .cabezera-informacion {
+  width: 100%;
+  background: #504C4C;
+}
+
+.cabezera-informacion-vacia {
+  padding: 3.5em 0;
+}
+
+.cabezera-informacion {
+  padding: .5em 1.5em;
+  color: #fff;
+}
+.cabezera-informacion .title-informacion {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.cabezera-informacion p {
+  width: 170px;
+  font-size: 13px;
+  line-height: 1.2em;
+}
+
+.lbl-informacion {
+  padding: .2em 1.5em;
+  box-shadow: 0 0 0 1px #363333;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #363333;
+  background: #fff;
+}
+.lbl-informacion i {
+  font-size: 11px;
+}
+
+.contenedor-detallecurso {
+  width: 100%;
+  padding: 2em 3em;
+  background: #fff;
+}
+
+.contenedor-cuadrodetalle {
+  width: 100%;
+  display: flex;
+}
+
+.bordes {
+  box-shadow: 0 0 0 2px #706B6B;
+  display: flex;
+  width: 80%;
+}
+
+.cuadro1, .cuadro2 {
+  width: 50%;
+  padding: .5em .5em;
+  padding-left: 2em;
+}
+.cuadro1 label, .cuadro2 label {
+  font-size: 16px;
+}
+.cuadro1 ul, .cuadro2 ul {
+  list-style: none;
+  padding: 0;
+}
+.cuadro1 li, .cuadro2 li {
+  font-size: 13px;
+  line-height: 1.7em;
+}
+.cuadro1 li i, .cuadro2 li i {
+  position: relative;
+  font-size: 7px;
+  top: -2px;
+  padding-right: 5px;
+}
+
+.cuadro1 {
+  border-right: 2px solid #706B6B;
+}
+
+.contenedor-modulo {
+  width: 100%;
+  padding: 1.5em 0em;
+}
+
+.modulos {
+  width: 100%;
+}
+.modulos ul {
+  list-style: none;
+  padding: 0;
+}
+.modulos li {
+  padding-left: 10px;
+  padding-top: 10px;
+  border-bottom: 1px solid #706B6B;
+  font-size: 15px;
+  position: relative;
+}
+.modulos li i {
+  position: absolute;
+  font-size: 6px;
+  top: 20px;
+  right: 15px;
+}
+
+/*# sourceMappingURL=detallecurso.css.map */

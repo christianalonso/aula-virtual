@@ -1,0 +1,16 @@
+.pie-pagina {
+  width: 100%;
+  height: 45px;
+  background: #504C4C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.pie-pagina label {
+  margin-bottom: 0;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=pie_pagina.css.map */

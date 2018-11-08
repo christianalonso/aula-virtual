@@ -1,0 +1,149 @@
+.contenedor{
+	width: 100%;
+	background: tomato;
+	//padding-top: 20px;
+	padding-bottom: 10px;
+	z-index: 5;
+}
+.caja-cursos{
+	padding: 2em 0;
+	background: #fff;
+	display: grid;
+	grid-template-columns: calc(25% - 12px) 1fr 1fr 1fr;
+	grid-gap:14px;
+}
+.img-inicio{
+	height: 420px;
+	width: 100%;
+	background: #504C4C;
+	position: relative;
+	overflow: hidden;
+	
+
+	& img{
+		width: 100%;
+	}
+}
+
+.title-imginicio{
+	position: absolute;
+	width: 60%;
+	//background: red;
+	height: 120px;
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+.title{
+	width: 100%;
+	//background: blue;
+	padding: .5em 0;
+	text-align: center;
+
+	& label{
+		font-size: 35px;
+		margin-bottom: 0;
+		color: #fff;
+	}
+}
+.btn-enlace{
+	width: 100%;
+	//background: tomato;
+	padding: .5em 0;
+	text-align: center;
+	& a{
+		text-decoration: none;
+		padding: .6em .6em;
+		background: #1B1414;
+		font-size: 13px;
+		border-radius: 15px;
+		color: #fff;
+	}
+}
+/*.contenedor-cursodestacado,.title-cursodescatado,.caja-cursos{
+	width: 100%;
+}
+.contenedor-cursodestacado{
+	
+	padding: 2.5em 3em;
+	background: #fff;
+}
+
+.title-cursodescatado{
+	
+	background: #fff;
+	text-align: center;
+	padding: .5em 0;
+	& label{
+		font-size: 20px;
+		font-weight: 600;
+		margin-bottom: 0;
+	}
+}
+.caja-cursos{
+	padding: 2em 0;
+	background: #fff;
+	display: grid;
+	grid-template-columns: calc(25% - 8px) 1fr 1fr 1fr;
+	grid-gap:10px;
+}
+.info-curso{
+	background: #fff;
+	width: 100%;
+	padding-bottom: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 0 1px black;
+
+	& .img-curso{
+		width: 100%;
+		//background: steelblue;
+	}
+
+	& img{
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+		border-bottom-right-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+
+	& .title-texcurso{
+		width: 100%;
+		//background: red;
+		padding: .3em .6em;
+
+		& label{
+			margin-bottom: 0;
+			font-weight: bold;
+			color: #363333;
+		}
+	}
+}
+.detalle-curso{
+	width: 100%;
+	//background: tomato;
+	padding: .4em .6em;
+	display: flex;
+	justify-content:space-between;
+
+	& label{
+		font-size: 14px;
+		margin-bottom: 0;
+		color: #363333;
+	}
+
+	& span{
+		color: transparent;
+	}
+
+}
+.precio-curso{
+	//background: orange;
+	padding: .1em .5em;
+	box-shadow: 0 0 0 1px #363333;
+	border-radius: 9px;
+
+}*/
