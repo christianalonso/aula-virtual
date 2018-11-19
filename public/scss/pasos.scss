@@ -1,15 +1,18 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
-.contenedor-pasos{
+
+.contenedor-pasos,.contenedor-info-pasos{
 	width: 100%;
-	padding: 1em 1em;
+	padding: 1em 4em;
+	max-width: 1500px;
+}
+.contenedor-pasos{
 	background: orange;
 	display: flex;
 }
 .contenedor-info-pasos{
-	width: 100%;
-	padding: 1em 1em;
+
 	background: green;
 }
 .pasos{
@@ -55,25 +58,32 @@ $plomo3:#706B6B;
 }
 
 .ventana{
-	width: 60%;
+	width: 70%;
 	box-shadow: 0 0 0 1px black;
-	padding: .5em .5em;
+	padding: .5em 0;
+	background: #fff;
+	overflow: hidden;
+	margin-bottom: 3em;
 }
-.info-paso1, .info-paso2{
+.info-paso1, .info-paso2, .info-paso3{
 	width: 100%;
-	background: yellow;
+	background: #fff;
 	display: flex;
-	
+	padding: 0 .6em;
+	position: relative;
+}
+.info-paso2,.info-paso3{
+	display: none;
 }
 .info-paso1{
-	display: none;
+	margin-right: 13%;
 }
 .info-curso-paso1,.contenedor-modulo{
 	width: 70%;
 }
 .info-curso-paso1{
-	padding: .1em .1em;
-	background: blue;
+	//padding: .1em .1em;
+	//background: blue;
 }
 .title-info-paso,.subtitle-info-paso{
 	width: 100%;
@@ -84,8 +94,7 @@ $plomo3:#706B6B;
 }
 .contenedor-modulo{
 	width: 100%;
-	
-	background: steelblue;
+	//background: steelblue;
 }
 .modulos{
 	width: 100%;
@@ -106,8 +115,8 @@ $plomo3:#706B6B;
 
 		& i{
 			position: absolute;
-			font-size: 6px;
-			top: 12px;
+			font-size: 5px;
+			top: 13px;
 			right: 15px;
 		}
 	}
@@ -116,16 +125,16 @@ $plomo3:#706B6B;
 .content-square{
 	width: 30%;
 	padding: .2em .2em;
-	background: skyblue;
+	//background: skyblue;
 	display: flex;
 	flex-wrap:wrap;
 
 }
 .square{
 	width: 100%;
-	background: lime;
-	padding: .1em .1em;
-	background: purple;
+	//background: lime;
+	padding: 0.1em;
+	//background: purple;
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -133,20 +142,25 @@ $plomo3:#706B6B;
 	//height: 100%;
 }
 .square-full{
-	width: 55%;
-	height: 90%;
+	width: 120px;
+	height: 110px;
+	padding: .5em .5em;
 	background: black;
+
+	& img{
+		width: 100%;
+	}
 }
 .botones{
 	width: 100%;
-	background: grey;
+	//background: grey;
 	padding: .2em 0;
 	display: flex;
 	justify-content:flex-end;
 	position: relative;
 }
 .btn-pasos{
-	width: 60px;
+	padding: 0 1em;
 	margin-right: 10px;
 	border: none;
 	border-radius: 15px;
@@ -154,13 +168,14 @@ $plomo3:#706B6B;
 	align-self:flex-end;
 	font-size: 15px;
 
+
 	&:last-child{
 		margin-right: 0;
 	}
 }
 .radios{
 	width: 100%;
-	background: orange;
+	//background: orange;
 	padding: .1em .1em;
 	display: flex;
 	align-items:center;
@@ -173,22 +188,85 @@ $plomo3:#706B6B;
 		cursor: pointer;
 	}
 }
+.frm-pago{
+	width: 100%;
+	& label{
+		width: 100%;
+		padding-bottom: .2em;
+	}
+}
 .cajas-frmpaso2{
 	width: 100%;
-	padding: .1em 0;
-	background: tomato;
+	padding: .2em 0;
+	//background: tomato;
+
+	& label{
+		
+		margin-bottom: 0;
+		font-size: 14px;
+	}
+
+	
+	& input[type="radio"]{
+		position: relative;
+		top: 2px;
+	}
+
+	& input[type="checkbox"]{
+		position: relative;
+		top: 2px;
+	}
+}
+.select{
+
+		height: 22px;
+		font-size: 14px;
+		border-radius: 2px;
+	
+}
+.por2{
+	width: 160px;
+	height: 150px;
+
+}
+.login-frm2{
+	width: 100%;
+	background: lime;
+	padding: .5em 0;
+	display: none;
+}
+.lbl-login{
+	width: 85px;
+	//background: red;
+	position: relative;
+	& span{
+		position: absolute;
+		right: 0;
+	}
 }
 .txt-paso2{
-	height: 28px;
+	height: 26px;
 	border-radius: 5px;
 	width: 40%;
 	font-size: 14px;
 	padding: 0 .5em;
+	border: 1px solid $plomo2;
 }
+.division{
+	//background: pink;
+	display: flex;
 
-
-
-
+	& label{
+		width: 20%;
+	}
+}
+.cajas-divididas{
+	width: 120px;
+	//background: red;
+	& label{
+		width: 100%;
+	}
+}
 #paso1:checked ~label{
 	background: red;
 }

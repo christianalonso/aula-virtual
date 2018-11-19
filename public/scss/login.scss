@@ -1,9 +1,11 @@
-
+.contenedor-cursodestacado{
+	max-width: none;
+}
 .caja-cursos{
 	padding: 2em 0;
 	background: #fff;
 	display: grid;
-	grid-template-columns: calc(33.33% - 8px) 1fr 1fr;x
+	grid-template-columns: calc(33.33% - 8px) 1fr 1fr;
 	grid-gap:10px;
 }
 

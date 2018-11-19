@@ -25,7 +25,7 @@
 			
 
 			<div class="contenedor-items">
-		   		<div class="img-login">
+		   		
 
 		   			<!--{{ HTML::image('images/img1.jpg') }}-->
 
@@ -36,7 +36,7 @@
 						
 					</div>
 		   			
-		   		</div>
+		   		
 
 		   		<div class="contenedor-detallecurso">
 
@@ -77,12 +77,16 @@
 						</div>
 
 				</div>
+				<div class="final">
+					@include('layout.pie_pagina')
+				</div>
+
 			</div>
 
 		</div>		
 
    </div>
-   @include('layout.pie_pagina')
+  
 	
 </body>
 </html>

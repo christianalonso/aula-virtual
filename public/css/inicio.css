@@ -1,8 +1,12 @@
 .contenedor {
   width: 100%;
-  background: tomato;
-  padding-bottom: 10px;
+  background: #fff;
   z-index: 5;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-item: center;
 }
 
 .caja-cursos {
@@ -19,6 +23,7 @@
   background: #504C4C;
   position: relative;
   overflow: hidden;
+  max-width: 1500px;
 }
 .img-inicio img {
   width: 100%;
@@ -60,90 +65,156 @@
   color: #fff;
 }
 
-/*.contenedor-cursodestacado,.title-cursodescatado,.caja-cursos{
-	width: 100%;
+.contenedor-cuadroprofe {
+  width: 100%;
+  padding: .1em 2em;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  max-width: 1500px;
 }
-.contenedor-cursodestacado{
-	
-	padding: 2.5em 3em;
-	background: #fff;
+
+.cuadro-profesor {
+  width: 80%;
+  background: #363333;
+  margin-bottom: 2em;
 }
 
-.title-cursodescatado{
-	
-	background: #fff;
-	text-align: center;
-	padding: .5em 0;
-	& label{
-		font-size: 20px;
-		font-weight: 600;
-		margin-bottom: 0;
-	}
+.cabezera-cuadro-profesor {
+  width: 100%;
+  height: 35px;
+  background: #706B6B;
 }
-.caja-cursos{
-	padding: 2em 0;
-	background: #fff;
-	display: grid;
-	grid-template-columns: calc(25% - 8px) 1fr 1fr 1fr;
-	grid-gap:10px;
+
+.contenido-cuadro-profesor {
+  width: 100%;
+  padding: 1.5em 0;
+  background: #363333;
+  display: flex;
+  flex-wrap: wrap;
 }
-.info-curso{
-	background: #fff;
-	width: 100%;
-	padding-bottom: 10px;
-	border-radius: 10px;
-	overflow: hidden;
-	box-shadow: 0 0 0 1px black;
 
-	& .img-curso{
-		width: 100%;
-		//background: steelblue;
-	}
-
-	& img{
-		width: 100%;
-		height: 100%;
-		object-fit:cover;
-		border-bottom-right-radius: 10px;
-		border-bottom-left-radius: 10px;
-	}
-
-	& .title-texcurso{
-		width: 100%;
-		//background: red;
-		padding: .3em .6em;
-
-		& label{
-			margin-bottom: 0;
-			font-weight: bold;
-			color: #363333;
-		}
-	}
+.contenedor-circle, .contenedor-square {
+  width: 50%;
 }
-.detalle-curso{
-	width: 100%;
-	//background: tomato;
-	padding: .4em .6em;
-	display: flex;
-	justify-content:space-between;
 
-	& label{
-		font-size: 14px;
-		margin-bottom: 0;
-		color: #363333;
-	}
-
-	& span{
-		color: transparent;
-	}
-
+.contenedor-circle {
+  padding-left: 3em;
 }
-.precio-curso{
-	//background: orange;
-	padding: .1em .5em;
-	box-shadow: 0 0 0 1px #363333;
-	border-radius: 9px;
+.contenedor-circle label {
+  padding-left: 1.8em;
+  margin-bottom: 3em;
+  color: #fff;
+}
 
-}*/
+.contenedor-square {
+  padding-right: 1em;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.img-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-square {
+  width: 260px;
+  height: 240px;
+  min-height: 5vh;
+  overflow: hidden;
+  border-radius: 15px;
+}
+.img-square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.final {
+  width: 100%;
+  background: #fff;
+  align-self: flex-end;
+}
+
+@media screen and (min-width: 1400px) {
+  .caja-cursos {
+    grid-template-columns: calc(20% - 12px) 1fr 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .caja-cursos {
+    grid-template-columns: calc(33.33% - 12px) 1fr 1fr;
+  }
+}
+@media screen and (max-width: 900px) {
+  .caja-cursos {
+    grid-template-columns: calc(50% - 12px) 1fr;
+  }
+
+  .img-square {
+    width: 240px;
+    height: 220px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .cuadro-profesor {
+    width: 90%;
+  }
+
+  .contenedor-cuadroprofe {
+    width: 100%;
+    padding: .1em 1em;
+  }
+
+  .img-square {
+    width: 200px;
+    height: 180px;
+  }
+
+  .contenedor-circle {
+    padding-left: 3em;
+  }
+  .contenedor-circle label {
+    padding-left: 1.4em;
+  }
+
+  .img-circle {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cuadro-profesor {
+    width: 100%;
+  }
+
+  .caja-cursos {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .contenedor-circle, .contenedor-square {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contenedor-circle label {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /*# sourceMappingURL=inicio.css.map */

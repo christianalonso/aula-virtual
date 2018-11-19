@@ -157,9 +157,12 @@
 
 			</div>
 		</div>
+		<div class="final">
+			@include('layout.contacto_pag')
+			@include('layout.pie_pagina')
+		</div>
 
 	</div>
-	@include('layout.contacto_pag')
-	@include('layout.pie_pagina')
+	
 </body>
 </html>

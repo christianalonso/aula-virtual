@@ -8,6 +8,7 @@
 	{{ HTML::style('css/contenedor.css') }}
 	{{ HTML::style('css/menu.css') }}
 	{{ HTML::style('css/misdatos.css') }}
+	{{ HTML::style('css/pie_pagina.css') }}
 </head>
 <body>
 	@include('layout.cabezera_login')
@@ -53,7 +54,6 @@
 		   				<div class="campo-dato">
 		   					<button class="btn-dato">Confirmar</button>
 		   				</div>
-		   
 		   			</div>
 
 		   			<div class="foto">
@@ -71,6 +71,9 @@
 		   			</div>
 
 		   		</div>
+		   		<div class="final">
+					@include('layout.pie_pagina')
+				</div>
 
 			</div>		
 

@@ -9,6 +9,8 @@
 	{{ HTML::style('css/cabezera.css') }}
 	{{ HTML::style('css/inicio.css') }}
 	{{ HTML::style('css/testimonio.css') }}
+	{{ HTML::style('css/contacto_pag.css') }}
+	{{ HTML::style('css/pie_pagina.css') }}
 </head>
 <body>
 	@include('layout.cabezera')
@@ -81,6 +83,10 @@
 			
 				</div>
 
+		</div>
+		<div class="final">
+			@include('layout.contacto_pag')
+			@include('layout.pie_pagina')
 		</div>
 
 	</div>

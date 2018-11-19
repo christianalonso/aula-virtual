@@ -1,8 +1,18 @@
+.contenedor-contactopag {
+  width: 100%;
+  background: #706B6B;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .contenedor-contacto {
   width: 100%;
   padding: 1em .5em;
   background: #706B6B;
   display: flex;
+  max-width: 1500px;
 }
 
 .redes-sociales, .contacto, .consulta {

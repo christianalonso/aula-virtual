@@ -9,6 +9,8 @@
 	{{ HTML::style('css/cursos.css') }}
 	{{ HTML::style('css/menu.css') }}
 	{{ HTML::style('css/miscursos.css') }}
+	{{ HTML::style('css/contacto_pag.css') }}
+	{{ HTML::style('css/pie_pagina.css') }}
 </head>
 <body>
 	 @include('layout.cabezera_login')
@@ -25,7 +27,7 @@
 			
 
 			<div class="contenedor-items">
-		   		<div class="img-login">
+		   		
 
 		   			<!--{{ HTML::image('images/img1.jpg') }}-->
 
@@ -36,7 +38,7 @@
 						
 					</div>
 		   			
-		   		</div>
+		   		
 
 		   		<div class="contenedor-cursodestacado">
 
@@ -90,8 +92,82 @@
 								</div>
 							</div>
 						</div>
+						<div class="info-curso">
+							<div class="img-curso">
+								{{ HTML::image('images/img2.jpg') }}
+							</div>
+							<div class="text-curso">
+								<div class="title-texcurso">
+									<label for="">Introducción - Básico</label>
+								</div>
+								<div class="detalle-curso">
+									<label for="" class="profesor"><i class="fas fa-circle"></i> Prof</label>
+									<a href="#" class="precio-curso">Ir al Curso</a>
+								</div>
+							</div>
+						</div>
+						<div class="info-curso">
+							<div class="img-curso">
+								{{ HTML::image('images/img2.jpg') }}
+							</div>
+							<div class="text-curso">
+								<div class="title-texcurso">
+									<label for="">Introducción - Básico</label>
+								</div>
+								<div class="detalle-curso">
+									<label for="" class="profesor"><i class="fas fa-circle"></i> Prof</label>
+									<a href="#" class="precio-curso">Ir al Curso</a>
+								</div>
+							</div>
+						</div>
+						<div class="info-curso">
+							<div class="img-curso">
+								{{ HTML::image('images/img2.jpg') }}
+							</div>
+							<div class="text-curso">
+								<div class="title-texcurso">
+									<label for="">Introducción - Básico</label>
+								</div>
+								<div class="detalle-curso">
+									<label for="" class="profesor"><i class="fas fa-circle"></i> Prof</label>
+									<a href="#" class="precio-curso">Ir al Curso</a>
+								</div>
+							</div>
+						</div>
+						<div class="info-curso">
+							<div class="img-curso">
+								{{ HTML::image('images/img2.jpg') }}
+							</div>
+							<div class="text-curso">
+								<div class="title-texcurso">
+									<label for="">Introducción - Básico</label>
+								</div>
+								<div class="detalle-curso">
+									<label for="" class="profesor"><i class="fas fa-circle"></i> Prof</label>
+									<a href="#" class="precio-curso">Ir al Curso</a>
+								</div>
+							</div>
+						</div>
+						<div class="info-curso">
+							<div class="img-curso">
+								{{ HTML::image('images/img2.jpg') }}
+							</div>
+							<div class="text-curso">
+								<div class="title-texcurso">
+									<label for="">Introducción - Básico</label>
+								</div>
+								<div class="detalle-curso">
+									<label for="" class="profesor"><i class="fas fa-circle"></i> Prof</label>
+									<a href="#" class="precio-curso">Ir al Curso</a>
+								</div>
+							</div>
+						</div>
 						
 					</div>
+				</div>
+				<div class="final">
+					@include('layout.contacto_pag')
+					@include('layout.pie_pagina')
 				</div>
 			</div>
 

@@ -1,9 +1,25 @@
 .contenedor{
 	width: 100%;
-	background: steelblue;
+	background: #fff;//steelblue;
 	padding-top: 70px;
-	padding-bottom: 10px;
+	//padding-bottom: 10px;
 	//height: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	//align-items:center;
+	//align-items:center;
+	box-sizing:border-box;
+}
+.final{
+	position: relative;
+	width: 100%;
+	//padding: 0 .5em;
+	background: #fff;//blue;
+	align-self:flex-end;
+	//max-width: 1500px;
+	
 }
 .separacion{
 	width: 100%;
@@ -17,6 +33,11 @@
 }
 .contenedor-items{
 	width: calc(100% - 220px);
-	padding: .5em 0;
-	background: blue;
+	//padding: .5em 0;
+	background: #fff;//blue;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	min-height: 100vh;
+	
 }

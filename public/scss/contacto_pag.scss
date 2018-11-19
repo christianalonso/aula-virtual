@@ -2,11 +2,20 @@ $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
 
+.contenedor-contactopag{
+	width: 100%;
+	background: $plomo3;
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	align-items:center;
+}
 .contenedor-contacto{
 	width: 100%;
 	padding: 1em .5em;
 	background: $plomo3;
 	display: flex;
+	max-width: 1500px;
 }
 .redes-sociales,.contacto,.consulta{
 	width: 33.33%;

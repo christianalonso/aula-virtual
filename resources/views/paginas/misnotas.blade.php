@@ -8,6 +8,8 @@
 	{{ HTML::style('css/contenedor.css') }}
 	{{ HTML::style('css/menu.css') }}
 	{{ HTML::style('css/misnotas.css') }}
+	{{ HTML::style('css/pie_pagina.css') }}
+
 </head>
 <body>
 	@include('layout.cabezera_login')
@@ -96,6 +98,11 @@
 
 
 		   		</div>
+
+		   		<div class="final">
+					
+					@include('layout.pie_pagina')
+				</div>
 
 			</div>		
 

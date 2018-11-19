@@ -5,10 +5,12 @@
 	{{ HTML::style('bootstrap/css/bootstrap.min.css') }}
 	{{ HTML::style('fontawesome/css/all.css') }}
 	{{ HTML::style('css/cabezera_login.css') }}
-	{{ HTML::style('css/login.css') }}
 	{{ HTML::style('css/contenedor.css') }}
+	{{ HTML::style('css/login.css') }}
 	{{ HTML::style('css/cursos.css') }}
 	{{ HTML::style('css/menu.css') }}
+	{{ HTML::style('css/contacto_pag.css') }}
+	{{ HTML::style('css/pie_pagina.css') }}
 
 </head>
 <body>
@@ -110,9 +112,15 @@
 
 					</div>
 				</div>
+				<div class="final">
+					@include('layout.contacto_pag')
+					@include('layout.pie_pagina')
+				</div>
 			</div>
 
 		</div>		
+
+		
 
    </div>
 

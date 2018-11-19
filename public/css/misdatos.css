@@ -3,6 +3,7 @@
   width: 100%;
   padding: 2em 3em;
   display: flex;
+  max-width: 1500px;
 }
 
 .campos, .foto {

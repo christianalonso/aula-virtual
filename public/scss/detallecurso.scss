@@ -19,6 +19,8 @@ $plomo3:#706B6B;
 .cabezera-informacion{
 	padding: .5em 1.5em;
 	color: #fff;
+	width: 100%;
+	max-height: 180px;
 
 	& .title-informacion{
 		font-size: 25px;
@@ -49,6 +51,7 @@ $plomo3:#706B6B;
 	width: 100%;
 	padding: 2em 3em;
 	background: #fff;
+	max-width: 1500px;
 }
 .contenedor-cuadrodetalle{
 	width: 100%;

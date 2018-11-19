@@ -13,10 +13,13 @@ body {
 
 .contenedor-cabezera {
   height: 70px;
-  background: tomato;
+  background: #363333;
   position: fixed;
   width: 100%;
   z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cabezera {
@@ -25,6 +28,7 @@ body {
   padding: 0 2em;
   width: 100%;
   position: relative;
+  max-width: 1500px;
 }
 
 .logo, .items {
@@ -58,6 +62,7 @@ body {
   right: 25px;
   z-index: 40;
   box-shadow: 0 0 2px 1px #aaa;
+  display: none;
 }
 .caja-iniciosesion:before {
   content: "";

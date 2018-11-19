@@ -1,8 +1,5 @@
-.contenedor {
-  width: 100%;
-  background: steelblue;
-  padding-top: 70px;
-  padding-bottom: 10px;
+.contenedor-cursodestacado {
+  max-width: none;
 }
 
 .caja-cursos {
@@ -11,24 +8,6 @@
   display: grid;
   grid-template-columns: calc(33.33% - 8px) 1fr 1fr;
   grid-gap: 10px;
-}
-
-.separacion {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
-.contenedor-menu {
-  width: 220px;
-  background: orange;
-  position: relative;
-}
-
-.contenedor-items {
-  width: calc(100% - 220px);
-  height: 20px;
-  background: blue;
 }
 
 .img-login {

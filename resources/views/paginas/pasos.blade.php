@@ -8,6 +8,8 @@
 	{{ HTML::style('css/cabezera.css') }}
 	{{ HTML::style('css/contenedor.css') }}
 	{{ HTML::style('css/pasos.css') }}
+	{{ HTML::style('css/contacto_pag.css') }}
+	{{ HTML::style('css/pie_pagina.css') }}
 </head>
 <body>
 	@include('layout.cabezera')
@@ -16,15 +18,15 @@
 		
 		<div class="contenedor-pasos">
 			<div class="pasos">
-				<input type="radio" id="paso1" name="paso">
+				<!--<input type="radio" id="paso1" name="paso">-->
 				<label for="paso1">Paso 1</label>
 			</div>
 			<div class="pasos">
-				<input type="radio" id="paso2" name="paso">
+				<!--<input type="radio" id="paso2" name="paso">-->
 				<label for="paso2">Paso 2</label>
 			</div>
 			<div class="pasos">
-				<input type="radio" id="paso3" name="paso"> 
+				<!--<input type="radio" id="paso3" name="paso"> -->
 				<label for="paso3">Paso 3</label>
 			</div>
 		</div>
@@ -55,7 +57,7 @@
 								<div class="square-full"></div>
 							</div>
 							<div class="botones">
-								<button class="btn-pasos">Ant</button>
+								
 								<button class="btn-pasos">Next</button>
 							</div>
 							
@@ -87,18 +89,70 @@
 								<div class="cajas-frmpaso2">
 									<input type="password" class="txt-paso2" placeholder="Contraseña">
 								</div>
-								
+								<div class="cajas-frmpaso2">
+									<label class="subtitle-info-paso">Fecha de Nacimiento</label>
+									<select class="select" name="" id="">
+										<option value="">1</option>
+										<option value="">2</option>
+									</select>
+									<select class="select" name="" id="">
+										<option value="">Enero</option>
+										<option value="">2</option>
+									</select>
+									<select class="select" name="" id="">
+										<option value="">2018</option>
+										<option value="">2</option>
+									</select>
+								</div>
+								<div class="cajas-frmpaso2">
+									<label for="">Sexo :</label>
+									<input type="radio" name="sexo" id="masculino">
+									<label for="masculino" class="lbl-frmpaso2">Masculino</label>
+									<input type="radio" name="sexo" id="femenino">
+									<label for="femenino" class="lbl-frmpaso2">Femenino</label>
+								</div>
+								<div class="cajas-frmpaso2">
+									<div class="division">
+										
+										<div class="cajas-divididas">
+											<label for="">Pais</label>
+											<select class="select" name="" id="">
+												<option>Peru</option>
+											</select>
+										</div>
+										<div class="cajas-divididas">
+											<label for="">Departamento</label>
+											<select class="select" name="" id="">
+												<option>Lima</option>
+												<option>Cajamarca</option>
+											</select>
+										</div>
+									</div>
+								</div>
+								<div class="cajas-frmpaso2">
+									<input type="checkbox" id="acepto">
+									<label for="acepto">Acepto los terminos y condiciones</label>
+								</div>
 
-							</div>						
-
-	
+							</div>
+							<div class="login-frm2">
+								<div class="cajas-frmpaso2">
+									<label class="lbl-login">Usuario<span>:</span></label>
+									<input type="text" class="txt-paso2" placeholder="Apellido">
+								</div>
+								<div class="cajas-frmpaso2">
+									<label class="lbl-login">Contraseña<span>:</span></label>
+									<input type="text" class="txt-paso2" placeholder="example@gmail.com">
+								</div>
+							</div>					
 
 							
 						</div>
+
 						<div class="content-square">
 
 							<div class="square">
-								<div class="square-full">
+								<div class="square-full por2">
 									
 								</div>
 							</div>
@@ -112,7 +166,42 @@
 						
 					</div>
 
+					<div class="info-paso3">
+						<div class="info-curso-paso1">
+							<label class="title-info-paso">Tipo de pago</label>
+							<div class="radios">
+								<input type="radio" name="pago" id="tarjeta">
+								<label class="subtitle-info-paso" for="tarjeta">Tarjeta de credito</label>
+								<input type="radio" name="pago" id="paypal">
+								<label class="subtitle-info-paso" for="paypal">Paypal</label>
+							</div>
+							<div class="frm-pago">
+								<div class="cajas-frmpaso2">
+									<label for="">Ingrese Número :</label>
+									<input type="text" class="txt-paso2" placeholder="">
+								</div>
+							</div>
+							
+						</div>
+						<div class="content-square">
+
+							<div class="square">
+								<div class="square-full"></div>
+							</div>
+							<div class="botones">
+								
+								<button class="btn-pasos">Comprar</button>
+							</div>
+
+							
+						</div>
+					</div>
+
 			</div>
+		</div>
+		<div class="final">
+			@include('layout.contacto_pag')
+			@include('layout.pie_pagina')
 		</div>
 
 	</div>

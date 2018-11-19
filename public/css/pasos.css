@@ -1,13 +1,15 @@
-.contenedor-pasos {
+.contenedor-pasos, .contenedor-info-pasos {
   width: 100%;
-  padding: 1em 1em;
+  padding: 1em 4em;
+  max-width: 1500px;
+}
+
+.contenedor-pasos {
   background: orange;
   display: flex;
 }
 
 .contenedor-info-pasos {
-  width: 100%;
-  padding: 1em 1em;
   background: green;
 }
 
@@ -49,28 +51,32 @@
 }
 
 .ventana {
-  width: 60%;
+  width: 70%;
   box-shadow: 0 0 0 1px black;
-  padding: .5em .5em;
+  padding: .5em 0;
+  background: #fff;
+  overflow: hidden;
+  margin-bottom: 3em;
 }
 
-.info-paso1, .info-paso2 {
+.info-paso1, .info-paso2, .info-paso3 {
   width: 100%;
-  background: yellow;
+  background: #fff;
   display: flex;
+  padding: 0 .6em;
+  position: relative;
+}
+
+.info-paso2, .info-paso3 {
+  display: none;
 }
 
 .info-paso1 {
-  display: none;
+  margin-right: 13%;
 }
 
 .info-curso-paso1, .contenedor-modulo {
   width: 70%;
-}
-
-.info-curso-paso1 {
-  padding: .1em .1em;
-  background: blue;
 }
 
 .title-info-paso, .subtitle-info-paso {
@@ -84,7 +90,6 @@
 
 .contenedor-modulo {
   width: 100%;
-  background: steelblue;
 }
 
 .modulos {
@@ -104,38 +109,38 @@
 }
 .modulos li i {
   position: absolute;
-  font-size: 6px;
-  top: 12px;
+  font-size: 5px;
+  top: 13px;
   right: 15px;
 }
 
 .content-square {
   width: 30%;
   padding: .2em .2em;
-  background: skyblue;
   display: flex;
   flex-wrap: wrap;
 }
 
 .square {
   width: 100%;
-  background: lime;
-  padding: .1em .1em;
-  background: purple;
+  padding: 0.1em;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .square-full {
-  width: 55%;
-  height: 90%;
+  width: 120px;
+  height: 110px;
+  padding: .5em .5em;
   background: black;
+}
+.square-full img {
+  width: 100%;
 }
 
 .botones {
   width: 100%;
-  background: grey;
   padding: .2em 0;
   display: flex;
   justify-content: flex-end;
@@ -143,7 +148,7 @@
 }
 
 .btn-pasos {
-  width: 60px;
+  padding: 0 1em;
   margin-right: 10px;
   border: none;
   border-radius: 15px;
@@ -157,7 +162,6 @@
 
 .radios {
   width: 100%;
-  background: orange;
   padding: .1em .1em;
   display: flex;
   align-items: center;
@@ -170,18 +174,79 @@
   cursor: pointer;
 }
 
+.frm-pago {
+  width: 100%;
+}
+.frm-pago label {
+  width: 100%;
+  padding-bottom: .2em;
+}
+
 .cajas-frmpaso2 {
   width: 100%;
-  padding: .1em 0;
-  background: tomato;
+  padding: .2em 0;
+}
+.cajas-frmpaso2 label {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+.cajas-frmpaso2 input[type="radio"] {
+  position: relative;
+  top: 2px;
+}
+.cajas-frmpaso2 input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
+.select {
+  height: 22px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.por2 {
+  width: 160px;
+  height: 150px;
+}
+
+.login-frm2 {
+  width: 100%;
+  background: lime;
+  padding: .5em 0;
+  display: none;
+}
+
+.lbl-login {
+  width: 85px;
+  position: relative;
+}
+.lbl-login span {
+  position: absolute;
+  right: 0;
 }
 
 .txt-paso2 {
-  height: 28px;
+  height: 26px;
   border-radius: 5px;
   width: 40%;
   font-size: 14px;
   padding: 0 .5em;
+  border: 1px solid #504C4C;
+}
+
+.division {
+  display: flex;
+}
+.division label {
+  width: 20%;
+}
+
+.cajas-divididas {
+  width: 120px;
+}
+.cajas-divididas label {
+  width: 100%;
 }
 
 #paso1:checked ~ label {

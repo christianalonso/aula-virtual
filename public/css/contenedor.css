@@ -1,8 +1,19 @@
 .contenedor {
   width: 100%;
-  background: steelblue;
+  background: #fff;
   padding-top: 70px;
-  padding-bottom: 10px;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.final {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  align-self: flex-end;
 }
 
 .separacion {
@@ -19,8 +30,11 @@
 
 .contenedor-items {
   width: calc(100% - 220px);
-  padding: .5em 0;
-  background: blue;
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 /*# sourceMappingURL=contenedor.css.map */
