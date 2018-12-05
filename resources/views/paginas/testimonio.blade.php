@@ -11,6 +11,8 @@
 	{{ HTML::style('css/testimonio.css') }}
 	{{ HTML::style('css/contacto_pag.css') }}
 	{{ HTML::style('css/pie_pagina.css') }}
+	{{ HTML::script('js/jquery.js') }}
+	{{ HTML::script('js/eventos.js') }}
 </head>
 <body>
 	@include('layout.cabezera')
@@ -19,7 +21,7 @@
 		
 		<div class="img-inicio">
 			
-				<!--{{ HTML::image('images/img1.jpg') }}-->
+				{{ HTML::image('images/img10.jpg') }}
 
 			<div class="title-imgtestimonio">
 				<div class="title-testimonio">

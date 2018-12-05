@@ -11,6 +11,7 @@ $plomo3:#706B6B;
 .cabezera-informacion-vacia,.cabezera-informacion{
 	width: 100%;
 	background: $plomo2;
+	overflow: hidden;
 }
 .cabezera-informacion-vacia{
 	padding: 3.5em 0;
@@ -25,6 +26,7 @@ $plomo3:#706B6B;
 	& .title-informacion{
 		font-size: 25px;
 		margin-bottom: 5px;
+		min-width: 250px;
 	}
 
 	& p{
@@ -61,7 +63,9 @@ $plomo3:#706B6B;
 .bordes{
 	box-shadow: 0 0 0 2px $plomo3;
 	display: flex;
+	flex-wrap:wrap;
 	width: 80%;
+	min-width: 250px;
 }
 .cuadro1,.cuadro2{
 	width: 50%;
@@ -98,7 +102,8 @@ $plomo3:#706B6B;
 
 .contenedor-modulo{
 	width: 100%;
-	padding: 1.5em 0em;
+	padding-top: 1.5em;
+	padding-bottom: .5em;
 	//background: steelblue;
 }
 .modulos{
@@ -108,6 +113,8 @@ $plomo3:#706B6B;
 	& ul{
 		list-style: none;
 		padding: 0;
+		min-width: 250px;
+		margin:0;
 	}
 
 	& li{
@@ -125,4 +132,23 @@ $plomo3:#706B6B;
 		}
 	}
 
+}
+
+@media screen and(max-width: 900px){
+	.bordes{
+		width: 100%;
+	}
+}
+@media screen and(max-width: 700px){
+	.cuadro1, .cuadro2{
+		width: 100%;
+	}
+	.cuadro1{
+		border-right: none;
+		border-bottom: 2px solid $plomo3;
+	}
+	.contenedor-detallecurso{
+		width: 100%;
+		padding: 1.5em 1em;
+	}
 }

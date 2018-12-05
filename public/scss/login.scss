@@ -6,7 +6,8 @@
 	background: #fff;
 	display: grid;
 	grid-template-columns: calc(33.33% - 8px) 1fr 1fr;
-	grid-gap:10px;
+	grid-gap:12px;
+	min-width: 250px;
 }
 
 .img-login{
@@ -18,11 +19,13 @@
 	
 	& img{
 		width: 100%;
+		height: 100%;
+		object-fit:cover;
 	}
 }
 .title-imglogin{
 	position: absolute;
-	width: 60%;
+	width: 100%;
 	//background: red;
 	height: 80px;
 	top: 0px;
@@ -39,8 +42,42 @@
 	text-align: center;
 
 	& label{
+		width: 100%;
 		font-size: 35px;
 		margin-bottom: 0;
 		color: #fff;
+	}
+}
+@media screen and(min-width: 1400px){
+	.caja-cursos{
+		grid-template-columns: calc(25% - 7px) 1fr 1fr 1fr;
+	}
+}
+@media screen and(max-width: 900px){
+	.caja-cursos{
+		grid-template-columns: calc(50% - 7px) 1fr;
+	}
+}
+@media screen and(max-width: 800px){
+	.img-login{
+		height: 360px;
+	}
+	.title{
+		& label{
+			font-size: 25px;
+		}
+	}
+}
+@media screen and(max-width: 600px){
+	.caja-cursos{
+		grid-template-columns: 1fr;
+	}
+	.img-login{
+		height: 300px;
+	}
+	.title{
+		& label{
+			font-size: 20px;
+		}
 	}
 }

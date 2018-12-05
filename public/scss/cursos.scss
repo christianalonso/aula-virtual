@@ -117,3 +117,22 @@
 		margin-bottom: 0;
 	}
 }
+
+
+@media screen and(max-width: 800px){
+	.title-curso{
+		font-size: 30px;
+	}
+}
+@media screen and(max-width: 600px){
+	.title-curso{
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 500px){
+
+	.contenedor-cursodestacado{
+		padding: 1em 1em;
+	}
+
+}

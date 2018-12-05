@@ -1,6 +1,7 @@
 .contenedor {
   width: 100%;
   background: #fff;
+  padding-top: 70px;
   z-index: 5;
   min-height: 100vh;
   display: flex;
@@ -18,20 +19,22 @@
 }
 
 .img-inicio {
-  height: 420px;
+  height: 500px;
   width: 100%;
   background: #504C4C;
   position: relative;
-  overflow: hidden;
   max-width: 1500px;
 }
 .img-inicio img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .title-imginicio {
   position: absolute;
-  width: 60%;
+  width: 100%;
+  padding: 0 1em;
   height: 120px;
   top: 200px;
   left: 0;
@@ -150,6 +153,11 @@
     grid-template-columns: calc(20% - 12px) 1fr 1fr 1fr 1fr;
   }
 }
+@media screen and (max-width: 1400px) {
+  .img-inicio {
+    height: 440px;
+  }
+}
 @media screen and (max-width: 1100px) {
   .caja-cursos {
     grid-template-columns: calc(33.33% - 12px) 1fr 1fr;
@@ -191,6 +199,23 @@
     width: 100px;
     height: 100px;
   }
+
+  .img-inicio {
+    height: 340px;
+  }
+
+  .title-imginicio {
+    padding: 0 1em;
+    top: 190px;
+  }
+
+  .title label {
+    font-size: 30px;
+  }
+
+  .btn-enlace a {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 600px) {
   .cuadro-profesor {
@@ -199,6 +224,30 @@
 
   .caja-cursos {
     grid-template-columns: 1fr;
+  }
+
+  .img-inicio {
+    height: 300px;
+  }
+
+  .title-imginicio {
+    padding: 0 1em;
+    top: 140px;
+    height: 100px;
+  }
+
+  .title {
+    padding: .3em 0;
+  }
+  .title label {
+    font-size: 20px;
+  }
+
+  .btn-enlace {
+    padding: .3em 0;
+  }
+  .btn-enlace a {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 500px) {

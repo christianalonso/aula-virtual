@@ -3,6 +3,7 @@
   width: 100%;
   padding: 2em 3em;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1500px;
 }
 
@@ -39,10 +40,11 @@
 }
 .campo-dato .txt-dato {
   width: 70%;
-  max-width: 310px;
+  max-width: 330px;
   height: 25px;
   padding: .4em .3em;
   border: 1px solid #706B6B;
+  min-width: 250px;
 }
 .campo-dato .btn-dato {
   margin: 1.5em 0;
@@ -88,6 +90,43 @@
   margin-bottom: 0;
   font-size: 20px;
   color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .campo-dato {
+    padding-left: 0;
+  }
+
+  .datos {
+    padding: 2em 2em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .campos {
+    min-width: 250px;
+  }
+
+  .datos {
+    padding: 1em 1em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .campos, .foto {
+    width: 100%;
+  }
+
+  .foto {
+    padding-top: 1em;
+  }
+
+  .campo-dato .txt-dato {
+    width: 100%;
+    max-width: 330px;
+    height: 25px;
+    padding: .4em .3em;
+    border: 1px solid #706B6B;
+    min-width: 250px;
+  }
 }
 
 /*# sourceMappingURL=misdatos.css.map */

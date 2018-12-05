@@ -10,6 +10,9 @@
 	{{ HTML::style('css/pasos.css') }}
 	{{ HTML::style('css/contacto_pag.css') }}
 	{{ HTML::style('css/pie_pagina.css') }}
+	{{ HTML::script('js/jquery.js') }}
+	{{ HTML::script('js/jquery-ui.js') }}
+	{{ HTML::script('js/eventos.js') }}
 </head>
 <body>
 	@include('layout.cabezera')
@@ -32,7 +35,8 @@
 		</div>
 
 		<div class="contenedor-info-pasos">
-			<div class="ventana">
+
+			<div class="ventana1">
 
 					<div class="info-paso1">
 						
@@ -58,14 +62,16 @@
 							</div>
 							<div class="botones">
 								
-								<button class="btn-pasos">Next</button>
+								<button class="btn-pasos" id="next">Next</button>
 							</div>
 							
 						</div>
 						
 						
 					</div>
-
+			</div>
+			
+			<div class="ventana2">
 					<div class="info-paso2">
 						
 						<div class="info-curso-paso1">
@@ -157,15 +163,17 @@
 								</div>
 							</div>
 							<div class="botones">
-								<button class="btn-pasos">Ant</button>
-								<button class="btn-pasos">Next</button>
+								<button class="btn-pasos" id="ant">Ant</button>
+								<button class="btn-pasos" id="next2">Next</button>
 							</div>
 							
 						</div>
 						
 						
 					</div>
+			</div>
 
+			<div class="ventana3">
 					<div class="info-paso3">
 						<div class="info-curso-paso1">
 							<label class="title-info-paso">Tipo de pago</label>

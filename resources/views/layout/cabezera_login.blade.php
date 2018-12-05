@@ -1,8 +1,13 @@
 <div class="contenedor-cabezera">
 	
 	<div class="cabezera">
+		<div class="iconomenu">
+			<i id="abrir_menulogin" class="fas fa-bars"></i>
+		</div>
 		<div class="logo">
-			
+			<div class="img-logo">
+				{{ HTML::image('images/img2.jpg') }}
+			</div>
 		</div>
 		<!--<div class="items">
 				

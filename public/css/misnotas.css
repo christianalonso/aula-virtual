@@ -2,6 +2,7 @@
   background: #fff;
   padding: 1em 2em;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   max-width: 1500px;
 }
@@ -18,6 +19,7 @@
   padding-right: .6em;
   background: #fff;
   width: 50%;
+  min-width: 250px;
 }
 
 .cuadro-cursos-prof {
@@ -25,6 +27,7 @@
   padding-top: 6em;
   background: #fff;
   width: 50%;
+  min-width: 250px;
 }
 
 .cabezera-cuadro {
@@ -42,7 +45,10 @@
 
 .bordes {
   width: 100%;
-  box-shadow: 0 0 0 2px #706B6B;
+  border-right: 2px solid #706B6B;
+  border-top: 2px solid #706B6B;
+  border-left: 2px solid #706B6B;
+  border-bottom: 2px solid #706B6B;
   display: flex;
 }
 
@@ -52,8 +58,6 @@
 .cuadro-modulo ul, .cuadro-puntos ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 0;
-  margin: 5px 0;
 }
 .cuadro-modulo li, .cuadro-puntos li {
   line-height: 3em;
@@ -89,6 +93,28 @@
 .cuadro-cursos li, .cuadro-prof li {
   line-height: 2.5em;
   font-size: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .notas {
+    padding: 1em 1em;
+  }
+
+  .cuadro-notas, .cuadro-cursos-prof {
+    width: 100%;
+  }
+
+  .cuadro-notas {
+    padding-right: 0;
+  }
+
+  .cuadro-cursos-prof {
+    padding-top: 2em;
+  }
+
+  .cuadro-cursos {
+    margin-bottom: 2em;
+  }
 }
 
 /*# sourceMappingURL=misnotas.css.map */

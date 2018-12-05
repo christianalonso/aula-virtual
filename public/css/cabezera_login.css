@@ -27,6 +27,18 @@ body {
   position: relative;
 }
 
+.iconomenu {
+  padding: 0 .8em;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.iconomenu i {
+  cursor: pointer;
+}
+
 .logo, .items {
   height: 100%;
   display: flex;
@@ -34,7 +46,19 @@ body {
 
 .logo {
   width: 30%;
-  background: red;
+  min-width: 270px;
+  padding: .2em 0;
+  padding-left: .5em;
+}
+
+.img-logo {
+  width: 150px;
+  height: 100%;
+}
+.img-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .items {

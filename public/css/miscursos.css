@@ -3,7 +3,8 @@
   background: #fff;
   display: grid;
   grid-template-columns: calc(33.33% - 8px) 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 12px;
+  min-width: 250px;
 }
 
 .cabezera-informacion-vacia, .cabezera-informacion {
@@ -15,6 +16,22 @@
   width: 100%;
   padding: 3.5em 0;
   background: #504C4C;
+}
+
+@media screen and (min-width: 1400px) {
+  .caja-cursos {
+    grid-template-columns: calc(25% - 7px) 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 900px) {
+  .caja-cursos {
+    grid-template-columns: calc(50% - 7px) 1fr;
+  }
+}
+@media screen and (max-width: 600px) {
+  .caja-cursos {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=miscursos.css.map */

@@ -15,7 +15,9 @@ $plomo3:#706B6B;
 	padding: 1em .5em;
 	background: $plomo3;
 	display: flex;
+	flex-wrap:wrap;
 	max-width: 1500px;
+	justify-content:center;
 }
 .redes-sociales,.contacto,.consulta{
 	width: 33.33%;
@@ -81,9 +83,10 @@ $plomo3:#706B6B;
 	}
 }
 .frm-consulta{
-	width: 60%;
+	width: 70%;
 	//background: skyblue;
 	position: relative;
+	max-width: 290px;
 
 }
 .caja-frmconsulta{
@@ -104,7 +107,7 @@ $plomo3:#706B6B;
 	width: calc(100% - 70px);
 	font-size: 13px;
 	resize:initial;
-	height: 60px;
+	height: 80px;
 	margin-left: .3em;
 }
 .content-etiqueta{
@@ -129,4 +132,37 @@ $plomo3:#706B6B;
 	color: #fff;
 	border-radius:2px;
 
+}
+
+@media screen and(max-width: 1000px) {
+	.frm-consulta{
+		width: 90%;
+	}
+}
+@media screen and(max-width: 800px) {
+	.contenedor-contacto{
+		/*flex-direction:column;
+		justify-content:center;
+		align-items:center;*/
+	}
+	.redes-sociales,.contacto,.consulta{
+		width: 50%;
+	}
+	.consulta{
+		width: 70%;
+	}
+	.contacto{
+		border-right:none;
+	}
+}
+
+@media screen and(max-width: 450px){
+	.redes-sociales,.contacto,.consulta{
+		width: 100%;
+	}
+	.contacto{
+		border-left:none;
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+	}
 }

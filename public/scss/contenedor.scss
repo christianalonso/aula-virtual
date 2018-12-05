@@ -11,6 +11,7 @@
 	//align-items:center;
 	//align-items:center;
 	box-sizing:border-box;
+	overflow: hidden;
 }
 .final{
 	position: relative;
@@ -28,8 +29,10 @@
 }
 .contenedor-menu{
 	width: 220px;
-	background: orange;
+	//background: orange;
 	position: relative;
+	transition:all .5s ease;
+	
 }
 .contenedor-items{
 	width: calc(100% - 220px);
@@ -39,5 +42,6 @@
 	flex-wrap:wrap;
 	justify-content:center;
 	min-height: 100vh;
+	transition:all .5s ease;
 	
 }

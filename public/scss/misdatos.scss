@@ -6,6 +6,7 @@ $plomo3:#706B6B;
 	width: 100%;
 	padding: 2em 3em;
 	display: flex;
+	flex-wrap:wrap;
 	max-width: 1500px;
 }
 .campos,.foto{
@@ -45,10 +46,11 @@ $plomo3:#706B6B;
 	& .txt-dato{
 		width: 70%;
 		//min-width: 250px;
-		max-width: 310px;
+		max-width: 330px;
 		height: 25px;
 		padding: .4em .3em;
 		border: 1px solid $plomo3;
+		min-width: 250px;
 	}
 	& .btn-dato{
 		margin: 1.5em 0;
@@ -94,4 +96,43 @@ $plomo3:#706B6B;
 		color: #fff;
 	}
 
+}
+
+@media screen and(max-width: 1000px){
+	.campo-dato{
+		padding-left: 0;
+	}
+	.datos{
+		padding: 2em 2em;
+	}
+}
+
+@media screen and(max-width: 800px){
+	.campos{
+		min-width: 250px;
+	}
+	.datos{
+		padding: 1em 1em;
+	}
+}
+
+@media screen and(max-width: 550px){
+	.campos,.foto{
+		width: 100%;
+	}
+	.foto{
+		padding-top: 1em;
+	}
+	.campo-dato{
+
+			& .txt-dato{
+				width: 100%;
+				//min-width: 250px;
+				max-width: 330px;
+				height: 25px;
+				padding: .4em .3em;
+				border: 1px solid $plomo3;
+				min-width: 250px;
+			}
+	}
 }

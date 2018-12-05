@@ -12,7 +12,9 @@
   padding: 1em .5em;
   background: #706B6B;
   display: flex;
+  flex-wrap: wrap;
   max-width: 1500px;
+  justify-content: center;
 }
 
 .redes-sociales, .contacto, .consulta {
@@ -21,6 +23,7 @@
   padding: 1.5em 0;
   padding-left: 2.5em;
   background: #706B6B;
+  min-width: 250px;
 }
 
 .contacto {
@@ -80,8 +83,9 @@
 }
 
 .frm-consulta {
-  width: 60%;
+  width: 70%;
   position: relative;
+  max-width: 290px;
 }
 
 .caja-frmconsulta {
@@ -102,7 +106,7 @@
   width: calc(100% - 70px);
   font-size: 13px;
   resize: initial;
-  height: 60px;
+  height: 80px;
   margin-left: .3em;
 }
 
@@ -127,6 +131,42 @@
   background: #363333;
   color: #fff;
   border-radius: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+  .frm-consulta {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .contenedor-contacto {
+    /*flex-direction:column;
+    justify-content:center;
+    align-items:center;*/
+  }
+
+  .redes-sociales, .contacto, .consulta {
+    width: 50%;
+  }
+
+  .consulta {
+    width: 70%;
+  }
+
+  .contacto {
+    border-right: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .redes-sociales, .contacto, .consulta {
+    width: 100%;
+  }
+
+  .contacto {
+    border-left: none;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
 }
 
 /*# sourceMappingURL=contacto_pag.css.map */

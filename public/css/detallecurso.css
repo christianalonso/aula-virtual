@@ -9,6 +9,7 @@
 .cabezera-informacion-vacia, .cabezera-informacion {
   width: 100%;
   background: #504C4C;
+  overflow: hidden;
 }
 
 .cabezera-informacion-vacia {
@@ -24,6 +25,7 @@
 .cabezera-informacion .title-informacion {
   font-size: 25px;
   margin-bottom: 5px;
+  min-width: 250px;
 }
 .cabezera-informacion p {
   width: 170px;
@@ -58,7 +60,9 @@
 .bordes {
   box-shadow: 0 0 0 2px #706B6B;
   display: flex;
+  flex-wrap: wrap;
   width: 80%;
+  min-width: 250px;
 }
 
 .cuadro1, .cuadro2 {
@@ -90,7 +94,8 @@
 
 .contenedor-modulo {
   width: 100%;
-  padding: 1.5em 0em;
+  padding-top: 1.5em;
+  padding-bottom: .5em;
 }
 
 .modulos {
@@ -99,6 +104,8 @@
 .modulos ul {
   list-style: none;
   padding: 0;
+  min-width: 250px;
+  margin: 0;
 }
 .modulos li {
   padding-left: 10px;
@@ -112,6 +119,27 @@
   font-size: 6px;
   top: 20px;
   right: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .bordes {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .cuadro1, .cuadro2 {
+    width: 100%;
+  }
+
+  .cuadro1 {
+    border-right: none;
+    border-bottom: 2px solid #706B6B;
+  }
+
+  .contenedor-detallecurso {
+    width: 100%;
+    padding: 1.5em 1em;
+  }
 }
 
 /*# sourceMappingURL=detallecurso.css.map */

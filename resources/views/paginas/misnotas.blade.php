@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	{{ HTML::style('bootstrap/css/bootstrap.min.css') }}
 	{{ HTML::style('fontawesome/css/all.css') }}
@@ -9,6 +11,8 @@
 	{{ HTML::style('css/menu.css') }}
 	{{ HTML::style('css/misnotas.css') }}
 	{{ HTML::style('css/pie_pagina.css') }}
+	{{ HTML::script('js/jquery.js') }}
+	{{ HTML::script('js/eventos.js') }}
 
 </head>
 <body>

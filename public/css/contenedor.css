@@ -7,6 +7,7 @@
   flex-wrap: wrap;
   justify-content: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .final {
@@ -24,8 +25,8 @@
 
 .contenedor-menu {
   width: 220px;
-  background: orange;
   position: relative;
+  transition: all .5s ease;
 }
 
 .contenedor-items {
@@ -35,6 +36,7 @@
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100vh;
+  transition: all .5s ease;
 }
 
 /*# sourceMappingURL=contenedor.css.map */

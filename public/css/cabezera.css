@@ -38,7 +38,19 @@ body {
 
 .logo {
   width: 30%;
-  background: red;
+  min-width: 270px;
+  padding: .2em 0;
+  padding-left: .5em;
+}
+
+.img-logo {
+  width: 150px;
+  height: 100%;
+}
+.img-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .items {
@@ -117,10 +129,114 @@ body {
 
 .opciones {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 .opciones a {
   color: #363333;
   text-decoration: none;
+  width: 100%;
+}
+
+.contenedor-menureponsive {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  z-index: 80;
+  display: flex;
+  justify-content: flex-end;
+  left: 100%;
+  transition: all .5s ease;
+}
+
+.menu-responsive {
+  width: 320px;
+  height: 100%;
+  background: white;
+  padding: 0 .5em;
+  padding-top: .5em;
+}
+
+.cabezera-menuresponsive {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.inicio-sesion-menu {
+  width: 100%;
+  padding: 1em 1.5em;
+}
+
+.items-menu-responsive {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.items-menu-responsive ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.items-menu-responsive a {
+  text-decoration: none;
+  display: block;
+  padding: 1em 0;
+  color: black;
+  font-weight: bold;
+}
+.items-menu-responsive a i {
+  padding-right: .6em;
+}
+.items-menu-responsive li {
+  padding-left: .5em;
+  border-bottom: 0.5px solid black;
+}
+
+.icono-cerrar, .icono-abrir {
+  width: 60px;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icono-cerrar i, .icono-abrir i {
+  cursor: pointer;
+}
+
+.icono-abrir {
+  display: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+  .items a {
+    display: none;
+  }
+
+  .icono-abrir {
+    width: 60px;
+    height: 100%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .icono-abrir i {
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 500px) {
+  .menu-responsive {
+    width: 100%;
+  }
+
+  .cabezera {
+    padding: 0 .5em;
+  }
 }
 
 /*# sourceMappingURL=cabezera.css.map */

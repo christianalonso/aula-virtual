@@ -11,6 +11,9 @@
 	{{ HTML::style('fontawesome/css/all.css') }}
 	{{ HTML::style('css/contacto_pag.css') }}
 	{{ HTML::style('css/pie_pagina.css') }}
+	{{ HTML::script('js/jquery.js') }}
+	{{ HTML::script('js/eventos.js') }}
+
 </head>
 <body>
 	@include('layout.cabezera')
@@ -19,7 +22,7 @@
 		
 		<div class="img-inicio">
 			
-				<!--{{ HTML::image('images/img1.jpg') }}-->
+				{{ HTML::image('images/img10.jpg') }}
 
 			<div class="title-imginicio">
 				<div class="title">

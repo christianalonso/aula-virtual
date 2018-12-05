@@ -3,6 +3,8 @@
   height: 100%;
   position: fixed;
   background: #706B6B;
+  transition: all .5s ease;
+  z-index: 1;
 }
 
 .usuario-login {

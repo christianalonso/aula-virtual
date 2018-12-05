@@ -5,12 +5,13 @@
 }
 
 .contenedor-pasos {
-  background: orange;
   display: flex;
 }
 
 .contenedor-info-pasos {
-  background: green;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
 }
 
 .pasos {
@@ -34,6 +35,7 @@
   padding-left: .4em;
   padding-top: .2em;
   font-size: 14px;
+  transition: all .5s ease;
 }
 .pasos:last-child {
   margin-right: 0;
@@ -50,29 +52,25 @@
   border-bottom: 1px solid black;
 }
 
-.ventana {
-  width: 70%;
-  box-shadow: 0 0 0 1px black;
-  padding: .5em 0;
-  background: #fff;
-  overflow: hidden;
-  margin-bottom: 3em;
-}
-
-.info-paso1, .info-paso2, .info-paso3 {
-  width: 100%;
-  background: #fff;
-  display: flex;
-  padding: 0 .6em;
-  position: relative;
-}
-
-.info-paso2, .info-paso3 {
+.ventana2, .ventana3 {
+  width: 850px;
   display: none;
 }
 
-.info-paso1 {
-  margin-right: 13%;
+.ventana1 {
+  width: 850px;
+}
+
+.info-paso1, .info-paso2, .info-paso3 {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  padding: .5em .6em;
+  position: relative;
+  box-shadow: 0 0 0 1px black;
+  width: 850px;
+  margin-bottom: 3em;
+  transition: all .5s ease !important;
 }
 
 .info-curso-paso1, .contenedor-modulo {
@@ -212,7 +210,6 @@
 
 .login-frm2 {
   width: 100%;
-  background: lime;
   padding: .5em 0;
   display: none;
 }
@@ -259,6 +256,90 @@
 
 #paso3:checked ~ label {
   background: red;
+}
+
+@media screen and (max-width: 1000px) {
+  .ventana1, .ventana2, .ventana3 {
+    width: 700px;
+  }
+
+  .info-paso1, .info-paso2, .info-paso3 {
+    width: 700px;
+  }
+
+  .txt-paso2 {
+    width: 65%;
+  }
+
+  .contenedor-info-pasos {
+    padding: 1em 2em;
+  }
+
+  .contenedor-pasos {
+    padding: 1em 2em;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ventana1, .ventana2, .ventana3 {
+    width: 600px;
+  }
+
+  .info-paso1, .info-paso2, .info-paso3 {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .ventana1, .ventana2, .ventana3 {
+    width: 500px;
+  }
+
+  .info-paso1, .info-paso2, .info-paso3 {
+    width: 500px;
+  }
+
+  .info-curso-paso1 {
+    width: 100%;
+  }
+
+  .content-square {
+    width: 100%;
+    margin-top: .8em;
+  }
+
+  .txt-paso2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .info-paso1, .info-paso2, .info-paso3 {
+    width: 100%;
+  }
+
+  .ventana1, .ventana2, .ventana3 {
+    width: 100%;
+  }
+
+  .contenedor-info-pasos {
+    padding: 1em 1em;
+  }
+
+  .contenedor-pasos {
+    padding: 1em 1em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .pasos {
+    width: 90px;
+    height: 65px;
+  }
+  .pasos label {
+    font-size: 13px;
+  }
+  .pasos:before {
+    height: 65px;
+    width: 65px;
+    left: 69.4px;
+  }
 }
 
 /*# sourceMappingURL=pasos.css.map */
