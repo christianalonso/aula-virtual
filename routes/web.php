@@ -11,14 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 Route::get('/hola', function () {
     return view('page1');
 });
 
-Route::get('/inicio','PageController@inicio');
+Route::get('/','PageController@inicio');
 
 Route::get('/login','PageController@login');
 
