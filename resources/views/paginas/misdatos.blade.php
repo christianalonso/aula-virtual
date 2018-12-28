@@ -62,10 +62,13 @@
 		   				<small>foto</small>
 		   				<div class="margen-foto">
 		   					
-		   					<div class="foto-usuario"></div>
+		   					<div class="foto-usuario" id="preview">
+		   						{{ HTML::image('images/img2.jpg') }}
+		   					</div>
 		   					<div class="content-agregar">
 		   						<div class="agregar">
 		   							<label>+</label>
+		   							<input type="file" title="agregar foto" cursor="pointer" id="subir_foto">
 		   						</div>
 		   					</div>
 

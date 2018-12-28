@@ -5,6 +5,7 @@
   background: #706B6B;
   transition: all .5s ease;
   z-index: 1;
+  display: block;
 }
 
 .usuario-login {
@@ -62,6 +63,12 @@
   position: relative;
   top: -3px;
   font-size: 9px;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=menu.css.map */

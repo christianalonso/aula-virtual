@@ -39,4 +39,14 @@
   transition: all .5s ease;
 }
 
+@media screen and (max-width: 800px) {
+  .contenedor-menu {
+    width: 0px;
+  }
+
+  .contenedor-items {
+    width: 100%;
+  }
+}
+
 /*# sourceMappingURL=contenedor.css.map */

@@ -3,15 +3,17 @@
 	<div class="cabezera">
 		<div class="logo">
 			<div class="img-logo">
-				{{ HTML::image('images/img2.jpg') }}
+				<a href="{{route('inicio')}}">
+					{{ HTML::image('images/img2.jpg') }}
+				</a>
 			</div>
 		</div>
 		<div class="items">
 				
-				<a href="#">Inicio</a>
-				<a href="#">Curso</a>
+				<a href="{{ route('inicio') }}">Inicio</a>
+				<a href="{{ route('cursos') }}">Curso</a>
 				<a href="#">¿Quienes Somos?</a>
-				<a href="#">Testimonio</a>
+				<a href="{{ route('testimonio') }}">Testimonio</a>
 				<a href="#" id="abrir_cajasesion">Iniciar Sesión</a>
 				<div class="icono-abrir">
 					<i id="abrir_menu" class="fas fa-bars"></i>
@@ -21,16 +23,16 @@
 
 			<div class="inicio-sesion">
 				<div class="cajas">
-					<input class="caja-sesion margen" type="text" placeholder="Email - Usuario">
-					<input class="caja-sesion" type="text" placeholder="Contraseña">
-					<small>Contraseña o usuario requerido</small>
+					<input class="caja-sesion margen" type="text" placeholder="Email - Usuario" id="txt_email" autocomplete="off">
+					<input class="caja-sesion" type="text" placeholder="Contraseña" id="txt_password" autocomplete="off">
+					<small id="mensaje_login">Contraseña o usuario requerido</small>
 				</div>
 				<div class="btn-sesion">
-					<button>Entrar</button>
+					<button id="entrar">Entrar</button>
 				</div>
 				<div class="opciones">
 					<a href="#">¿Olvidaste tu contraseña?</a>
-					<a href="">Registrarse</a>
+					<a href="{{ route('registrar') }}">Registrarse</a>
 				</div>
 				
 			</div>
@@ -56,12 +58,12 @@
 
 		<div class="inicio-sesion-menu">
 				<div class="cajas">
-					<input class="caja-sesion margen" type="text" placeholder="Email - Usuario" id="txt_email">
-					<input class="caja-sesion" type="text" placeholder="Contraseña" id="txt_password">
-					<small>Contraseña o usuario requerido</small>
+					<input class="caja-sesion margen" type="text" placeholder="Email - Usuario" id="txt_email_mobile" autocomplete="off">
+					<input class="caja-sesion" type="text" placeholder="Contraseña" id="txt_password_mobile" autocomplete="off">
+					<small id="mensaje_login_mobile">Contraseña o usuario requerido</small>
 				</div>
 				<div class="btn-sesion">
-					<button>Entrar</button>
+					<button id="entrar_mobile">Entrar</button>
 				</div>
 				<div class="opciones">
 					<a href="#">¿Olvidaste tu contraseña?</a>

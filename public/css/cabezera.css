@@ -67,7 +67,7 @@ body {
 
 .caja-iniciosesion {
   width: 220px;
-  height: 210px;
+  min-height: 100px;
   background: #fff;
   position: fixed;
   top: 70px;
@@ -111,6 +111,7 @@ body {
 }
 .cajas small {
   color: #dc3545;
+  margin-top: 2px;
 }
 
 .btn-sesion {

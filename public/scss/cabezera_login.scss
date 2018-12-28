@@ -147,3 +147,12 @@ body{
 
 	}
 }
+
+@media screen and(max-width: 800px){
+	.cabezera{
+		padding: 0 0em;
+	}
+	.iconomenu{
+		padding: 0 .6em;
+	}
+}

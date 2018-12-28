@@ -127,11 +127,12 @@
 											</select>
 										</div>
 										<div class="cajas-divididas">
-											<label for="">Departamento</label>
+											<label for="">Dirección</label>
 											<select class="select" name="" id="">
 												<option>Lima</option>
 												<option>Cajamarca</option>
 											</select>
+											<!--<input type="text">-->
 										</div>
 									</div>
 								</div>

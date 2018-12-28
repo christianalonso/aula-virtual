@@ -8,6 +8,7 @@ $plomo3:#706B6B;
 	background: $plomo3;
 	transition: all .5s ease;
 	z-index: 1;
+	display: block;
 }
 .usuario-login{
 	width: 100%;
@@ -65,5 +66,10 @@ $plomo3:#706B6B;
 			top: -3px;
 			font-size: 9px;
 		}
+	}
+}
+@media screen and(max-width: 800px){
+	.menu{
+		display: none;
 	}
 }

@@ -13,6 +13,11 @@
 	{{ HTML::style('css/pie_pagina.css') }}
 	{{ HTML::script('js/jquery.js') }}
 	{{ HTML::script('js/eventos.js') }}
+	{{ HTML::script('js/validarLogin.js') }}
+	<!--{{ HTML::script('alertifyjs/alertify.js') }}
+	{{ HTML::style('alertifyjs/css/alertify.css') }}
+	{{ HTML::script('js/alertas.js') }}-->
+
 
 </head>
 <body>
@@ -29,7 +34,7 @@
 					<label for="">ESTUDIA CON NOSOTROS</label>
 				</div>
 				<div class="btn-enlace">
-					<a href="#">VER TODOS LOS CURSOS</a>
+					<a href="{{ route('cursos') }}">VER TODOS LOS CURSOS</a>
 				</div>
 				
 				

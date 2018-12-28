@@ -1,4 +1,4 @@
-<div class="menu">
+<div class="menu" id="menu_login">
 	
 
 	<div class="usuario-login">
@@ -13,11 +13,11 @@
 	<div class="menu-items">
 		
 		<ul>
-			<li><a href="#"><i class="fas fa-circle"></i> Mi Perfil</a></li>
-			<li><a href="#"><i class="fas fa-circle"></i> Mis Cursos</a></li>
-			<li><a href="#"><i class="fas fa-circle"></i> Mis Notas</a></li>
-			<li><a href="#"><i class="fas fa-circle"></i> Cursos</a></li>
-			<li><a href="#"><i class="fas fa-circle"></i> Cerrar Sesión</a></li>
+			<li><a href="{{ route('misdatos') }}"><i class="fas fa-circle"></i> Mi Perfil</a></li>
+			<li><a href="{{ route('miscursos') }}"><i class="fas fa-circle"></i> Mis Cursos</a></li>
+			<li><a href="{{ route('misnotas') }}"><i class="fas fa-circle"></i> Mis Notas</a></li>
+			<li><a href="{{ route('login') }}"><i class="fas fa-circle"></i> Cursos</a></li>
+			<li><a href="{{ route('inicio') }}"><i class="fas fa-circle"></i> Cerrar Sesión</a></li>
 		</ul>
 
 	</div>

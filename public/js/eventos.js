@@ -9,6 +9,8 @@ $(function(){
 		$(".contenedor-menureponsive").css({
 			left:"0"
 		});
+		$("#txt_email_mobile").val("");
+		$("#txt_password_mobile").val("");
 
 	});
 
@@ -46,20 +48,31 @@ $(function(){
 	$("#abrir_menulogin").click(function(){
 		
 		if(mostrar==0){
-
-			$(".menu").css({left:"-220px"});
-			$(".contenedor-menu").css({width:"0px"});
-			$(".contenedor-items").css({width:"100%"});
-			mostrar++;
 			
+			if($("#menu_login").is(":visible")){
+				$(".menu").css({left:"-220px"});
+				$(".contenedor-menu").css({width:"0px"});
+				$(".contenedor-items").css({width:"100%"});
+				mostrar++;
+			}else{
+				$(".menu").css({display:"block"});
+				$(".contenedor-menu").css({width:"220px"});
+				$(".contenedor-items").css({width:"calc(100% - 220px)"});
+				mostrar=+2;
+			}
 
 		}else if(mostrar == 1){
-
+			console.log(mostrar)
 			$(".menu").css({left:"0px"});
 			$(".contenedor-menu").css({width:"220px"});
 			$(".contenedor-items").css({width:"calc(100% - 220px)"});
 			mostrar=0;
 			
+		}else if(mostrar == 2){
+				$(".menu").css({left:"-220px"});
+				$(".contenedor-menu").css({width:"0px"});
+				$(".contenedor-items").css({width:"100%"});
+				mostrar--;
 		}
 
 	});
@@ -108,9 +121,58 @@ $(function(){
             	setTimeout(function() {
 				    $(".caja-iniciosesion").fadeOut(125);
 				},125);
+				$("#txt_email").val("");
+				$("#txt_password").val("");
 				show=true;
             }
-  
    });
+
+	$("#subir_foto").change(function(e){
+
+		//instanciando clase FileReader
+
+		let reader = new FileReader();
+
+		//leemos el archivo subido y lo pasamos al FileReader
+		//console.log(e.target.files[0].type);
+		tipo = e.target.files[0].type;
+		reader.readAsDataURL(e.target.files[0]);
+
+		if(tipo == "image/jpeg" || tipo == "image/png"){
+			//le decimos que cuando este listo ejecute el codigo interno
+
+				reader.onload = function(){
+					
+					let preview  = $("#preview"); 
+					preview.empty();
+					imagen =  document.createElement("img");
+
+					imagen.src = reader.result;
+
+					preview.innerHTML = '';
+					preview.append(imagen);
+
+				}
+		}else{
+			alert("tipo de archivo no permitido");
+		}
+
+	});
+
+	$("#entrar").click(function(){
+
+		//alertaDeError("");
+		//alertaDeExito("");
+		//alertaConfirmacion();
+
+	});
+
+	$("#ver_modal").click(function(){
+		$('.contenedor-modal').css({top:"0"});
+	})
+
+	$("#cerrar_modal,#btn_cerrar_modal").click(function(){
+		$('.contenedor-modal').css({top:"-100vh"});
+	})
 
 })

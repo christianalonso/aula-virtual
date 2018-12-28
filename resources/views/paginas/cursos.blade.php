@@ -13,6 +13,7 @@
 	{{ HTML::style('fontawesome/css/all.css') }}
 	{{ HTML::script('js/jquery.js') }}
 	{{ HTML::script('js/eventos.js') }}
+	{{ HTML::script('js/validarLogin.js') }}
 </head>
 <body>
 	@include('layout.cabezera')

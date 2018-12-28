@@ -54,6 +54,11 @@ class PageController extends Controller
         return view('paginas/pasos');
     }
 
+    public function registrar()
+    {
+        return view('paginas/registrar');
+    }
+
 
 }
 

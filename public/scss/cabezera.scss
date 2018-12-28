@@ -67,7 +67,7 @@ body{
 
 .caja-iniciosesion{
 	width: 220px;
-	height: 210px;
+	min-height: 100px;
 	background: #fff;
 	position: fixed;
 	top: 70px;
@@ -112,6 +112,8 @@ body{
 	}
 	& small{
 		color: #dc3545;
+		margin-top: 2px;
+		//display: none;
 	}
 	
 	

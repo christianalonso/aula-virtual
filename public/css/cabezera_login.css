@@ -142,4 +142,14 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 800px) {
+  .cabezera {
+    padding: 0 0em;
+  }
+
+  .iconomenu {
+    padding: 0 .6em;
+  }
+}
+
 /*# sourceMappingURL=cabezera_login.css.map */

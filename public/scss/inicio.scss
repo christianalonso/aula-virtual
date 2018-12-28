@@ -157,7 +157,7 @@ $plomo3:#706B6B;
 
 @media screen and(min-width: 1400px){
 	.caja-cursos{
-		grid-template-columns: calc(20% - 12px) 1fr 1fr 1fr 1fr;
+		grid-template-columns: calc(20% - 8px) 1fr 1fr 1fr 1fr;
 	}
 
 }
@@ -169,13 +169,13 @@ $plomo3:#706B6B;
 
 @media screen and(max-width: 1100px){
 	.caja-cursos{
-		grid-template-columns: calc(33.33% - 12px) 1fr 1fr ;
+		grid-template-columns: calc(33.33% - 8px) 1fr 1fr ;
 	}
 }
 
 @media screen and(max-width: 900px){
 	.caja-cursos{
-		grid-template-columns: calc(50% - 12px) 1fr;
+		grid-template-columns: calc(50% - 8px) 1fr;
 	}
 	.img-square{
 		width: 240px;
