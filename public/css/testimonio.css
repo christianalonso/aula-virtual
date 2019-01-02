@@ -23,6 +23,7 @@
 .title-testimonio {
   font-size: 35px;
   color: #fff;
+  text-align: center;
 }
 .title-testimonio label {
   margin-bottom: 0;
@@ -132,6 +133,10 @@
     justify-content: center;
   }
 
+  .title-testimonio {
+    font-size: 30px;
+  }
+
   /*.circulo{
   	right: 20px;
   }*/
@@ -145,6 +150,14 @@
     border-right: none;
   }
 
+  .title-testimonio {
+    font-size: 25px;
+  }
+
+  .btn-tipoenlace {
+    font-size: 14px;
+  }
+
   /*.circulo{
   	right: 20px;
   }*/
@@ -153,6 +166,10 @@
   .caja-testimonio {
     padding: 1em 1em;
     width: 90%;
+  }
+
+  .title-testimonio {
+    font-size: 20px;
   }
 
   /*.circulo{
@@ -174,6 +191,10 @@
 
   .contenedor-testimonio {
     padding: 1.5em .5em;
+  }
+
+  .btn-tipoenlace {
+    font-size: 12px;
   }
 }
 

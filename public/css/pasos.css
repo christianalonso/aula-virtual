@@ -153,6 +153,7 @@
   height: 24px;
   align-self: flex-end;
   font-size: 15px;
+  cursor: pointer;
 }
 .btn-pasos:last-child {
   margin-right: 0;
@@ -182,25 +183,107 @@
 
 .cajas-frmpaso2 {
   width: 100%;
-  padding: .2em 0;
+  padding: .3em 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 .cajas-frmpaso2 label {
   margin-bottom: 0;
   font-size: 14px;
+  min-height: 21px;
 }
 .cajas-frmpaso2 input[type="radio"] {
   position: relative;
-  top: 2px;
+  top: 4px;
+  left: 8px;
 }
 .cajas-frmpaso2 input[type="checkbox"] {
   position: relative;
   top: 2px;
 }
+.cajas-frmpaso2 .chk-hidden {
+  display: none;
+}
 
-.select {
-  height: 22px;
+.estilo-select {
+  min-width: 25px;
+  height: 25px;
+  background: #fff;
+  margin-right: .5em;
+  border: 1px solid black;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.estilo-select:last-child {
+  margin-right: 0;
+}
+.estilo-select select {
+  position: relative;
+  top: -1px;
+  border: none;
+  width: 100%;
+  height: 23px;
   font-size: 14px;
+  padding-right: 3px;
+  padding-left: 3px;
+  outline: none;
+  border-radius: 8px;
+}
+.estilo-select:before {
+  content: "\025be";
+  background: #fff;
+  height: 100%;
+  width: 16px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  right: 0;
+  pointer-events: none;
+  border-left: 1px solid black;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.aceptar {
+  width: 100%;
+  padding-left: 30px;
+  font-size: 15px;
+  position: relative;
+  margin-top: .5em;
+  cursor: pointer;
+}
+.aceptar::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0;
   border-radius: 2px;
+  box-shadow: 0 0 0 1px #aaa;
+}
+
+.ok {
+  position: absolute;
+  left: 0;
+  top: -2px;
+  z-index: 1;
+  font-size: 24px;
+  transition: all .3s ease;
+  color: #28a745;
+  opacity: 0;
+}
+
+#acepto:checked ~ .aceptar .ok {
+  opacity: 1;
 }
 
 .por2 {
@@ -214,9 +297,15 @@
   display: none;
 }
 
+.lbl-frmpaso2 {
+  cursor: pointer;
+  padding-left: .7em;
+}
+
 .lbl-login {
   width: 85px;
   position: relative;
+  margin-right: .3em;
 }
 .lbl-login span {
   position: absolute;
@@ -226,7 +315,7 @@
 .txt-paso2 {
   height: 26px;
   border-radius: 5px;
-  width: 40%;
+  width: 60%;
   font-size: 14px;
   padding: 0 .5em;
   border: 1px solid #504C4C;
@@ -240,10 +329,19 @@
 }
 
 .cajas-divididas {
-  width: 120px;
+  min-width: 120px;
+  margin-right: .5em;
 }
 .cajas-divididas label {
   width: 100%;
+}
+.cajas-divididas input[type="text"] {
+  height: 26px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 14px;
+  padding: 0 .5em;
+  border: 1px solid #504C4C;
 }
 
 #paso1:checked ~ label {

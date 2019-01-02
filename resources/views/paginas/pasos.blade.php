@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title></title>
 	{{ HTML::style('bootstrap/css/bootstrap.min.css') }}
@@ -97,21 +98,30 @@
 								</div>
 								<div class="cajas-frmpaso2">
 									<label class="subtitle-info-paso">Fecha de Nacimiento</label>
-									<select class="select" name="" id="">
-										<option value="">1</option>
-										<option value="">2</option>
-									</select>
-									<select class="select" name="" id="">
-										<option value="">Enero</option>
-										<option value="">2</option>
-									</select>
-									<select class="select" name="" id="">
-										<option value="">2018</option>
-										<option value="">2</option>
-									</select>
+									<div class="estilo-select">
+										<select class="select" name="" id="">
+											<option value="">1</option>
+											<option value="">2</option>
+										</select>
+									</div>
+
+									<div class="estilo-select">
+										<select class="select" name="" id="">
+											<option value="">Enero</option>
+											<option value="">2</option>
+										</select>
+									</div>
+									
+									<div class="estilo-select">
+										<select class="select" name="" id="">
+											<option value="">2018</option>
+											<option value="">2</option>
+										</select>
+									</div>
+
 								</div>
 								<div class="cajas-frmpaso2">
-									<label for="">Sexo :</label>
+									<label for="" class="">Sexo :</label>
 									<input type="radio" name="sexo" id="masculino">
 									<label for="masculino" class="lbl-frmpaso2">Masculino</label>
 									<input type="radio" name="sexo" id="femenino">
@@ -121,24 +131,43 @@
 									<div class="division">
 										
 										<div class="cajas-divididas">
-											<label for="">Pais</label>
-											<select class="select" name="" id="">
-												<option>Peru</option>
-											</select>
+											<label for="">País</label>
+											<div class="estilo-select">
+												<select class="select" name="" id="">
+													<option>Peru</option>
+												</select>
+											</div>
 										</div>
 										<div class="cajas-divididas">
-											<label for="">Dirección</label>
-											<select class="select" name="" id="">
-												<option>Lima</option>
-												<option>Cajamarca</option>
-											</select>
-											<!--<input type="text">-->
+											<label for="">Departamento</label>
+											<div class="estilo-select">
+												<select class="select" name="" id="">
+													<option>Lima</option>
+												</select>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="cajas-frmpaso2">
-									<input type="checkbox" id="acepto">
-									<label for="acepto">Acepto los terminos y condiciones</label>
+									<div class="division">
+										
+										<div class="cajas-divididas">
+											<label for="">Distrito</label>
+											<div class="estilo-select">
+												<select class="select" name="" id="">
+													<option>Miraflores</option>
+												</select>
+											</div>
+										</div>
+										<div class="cajas-divididas">
+											<label for="">Dirección</label>
+											<input type="text">
+										</div>
+									</div>
+								</div>
+								<div class="cajas-frmpaso2">
+									<input type="checkbox" id="acepto" class="chk-hidden">
+									<label for="acepto" class="aceptar">Acepto los terminos y condiciones<span class="far fa-check-square ok"></span></label>
 								</div>
 
 							</div>

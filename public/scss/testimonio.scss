@@ -24,6 +24,7 @@ $plomo3:#706B6B;
 .title-testimonio{
 	font-size: 35px;
 	color: #fff;
+	text-align: center;
 	& label{
 		margin-bottom: 0;
 	}
@@ -132,6 +133,9 @@ $plomo3:#706B6B;
 		padding: 1.5em 0;
 		justify-content:center;
 	}
+	.title-testimonio{
+		font-size: 30px;
+	}
 	/*.circulo{
 		right: 20px;
 	}*/
@@ -145,6 +149,12 @@ $plomo3:#706B6B;
 			border-right: none;
 		}
 	}
+	.title-testimonio{
+		font-size: 25px;
+	}
+	.btn-tipoenlace{
+		font-size: 14px;
+	}
 	/*.circulo{
 		right: 20px;
 	}*/
@@ -153,6 +163,9 @@ $plomo3:#706B6B;
 	.caja-testimonio{
 		padding: 1em 1em;	
 		width: 90%;
+	}
+	.title-testimonio{
+		font-size: 20px;
 	}
 	/*.circulo{
 		right: 20px;
@@ -172,4 +185,8 @@ $plomo3:#706B6B;
 	.contenedor-testimonio{
 		padding: 1.5em .5em; 
 	}
+	.btn-tipoenlace{
+		font-size: 12px;
+	}
+
 }

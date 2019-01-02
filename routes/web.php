@@ -17,7 +17,6 @@ Route::get('/', function () {
 Route::get('/hola', function () {
     return view('page1');
 });
-
 Route::get('/inicio','PageController@inicio')->name('inicio');
 
 Route::get('/login','PageController@login')->name('login');

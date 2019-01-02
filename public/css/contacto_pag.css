@@ -23,7 +23,6 @@
   padding: 1.5em 0;
   padding-left: 2.5em;
   background: #706B6B;
-  min-width: 250px;
 }
 
 .contacto {
@@ -61,6 +60,13 @@
   align-items: center;
   margin-right: 25px;
   border-radius: 50px;
+}
+.content-redsocial .red-social a {
+  display: flex;
+  color: black;
+}
+.content-redsocial .red-social a:hover {
+  text-decoration: none;
 }
 
 .contenido {
@@ -131,6 +137,7 @@
   background: #363333;
   color: #fff;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1000px) {

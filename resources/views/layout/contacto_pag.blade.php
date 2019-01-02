@@ -5,10 +5,10 @@
 				<div class="centrar">
 					<label class="title-pagecontacto">Redes Sociales</label>
 					<div class="content-redsocial">
-						<div class="red-social"><i class="fab fa-facebook-f"></i></div>
-						<div class="red-social"><i class="fab fa-facebook-f"></i></div>
-						<div class="red-social"><i class="fab fa-facebook-f"></i></div>
-						<div class="red-social"><i class="fab fa-facebook-f"></i></div>
+						<div class="red-social"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+						<div class="red-social"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+						<div class="red-social"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+						<div class="red-social"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
 					</div>
 					<label class="title-pagecontacto">visitanos</label>
 					<p class="contenido">www.example.com.pe</p>

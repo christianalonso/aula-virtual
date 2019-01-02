@@ -9,48 +9,39 @@ use App\Http\Controllers\Controller;
 class PageController extends Controller
 {
    
-    public function inicio()
-    {
+    public function inicio() {
         return view('inicio');
     }
 
-    public function login()
-    {
+    public function login() {
         return view('paginas/login');
     }
 
-    public function miscursos()
-    {
+    public function miscursos() {
         return view('paginas/miscursos');
     }
 
-    public function detallecurso()
-    {
+    public function detallecurso() {
         return view('paginas/detallecurso');
     }
 
-    public function misnotas()
-    {
+    public function misnotas() {
         return view('paginas/misnotas');
     }
 
-    public function misdatos()
-    {
+    public function misdatos() {
         return view('paginas/misdatos');
     }
 
-    public function cursos()
-    {
+    public function cursos() {
         return view('paginas/cursos');
     }
 
-    public function testimonio()
-    {
+    public function testimonio() {
         return view('paginas/testimonio');
     }
 
-    public function pasos()
-    {
+    public function pasos() {
         return view('paginas/pasos');
     }
 

@@ -11,7 +11,6 @@
 	{{ HTML::style('css/testimonio.css') }}
 	{{ HTML::style('css/contacto_pag.css') }}
 	{{ HTML::style('css/pie_pagina.css') }}
-	<!--{{ HTML::style('css/modal.css') }}-->
 	{{ HTML::script('js/jquery.js') }}
 	{{ HTML::script('js/eventos.js') }}
 	{{ HTML::script('js/validarLogin.js') }}
@@ -30,7 +29,7 @@
 					<label>MAS QUE UNA EMPRESA, SOMOS UNA COMUNIDAD</label>
 				</div>
 				<div class="enlace-testimonio">
-					<a class="btn-tipoenlace" href="#">Comparte tu testimonio</a>-->
+					<a class="btn-tipoenlace" href="#">Comparte tu testimonio</a>
 				</div>
 			</div>
 			
