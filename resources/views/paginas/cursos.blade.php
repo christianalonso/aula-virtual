@@ -14,6 +14,12 @@
 	{{ HTML::script('js/jquery.js') }}
 	{{ HTML::script('js/eventos.js') }}
 	{{ HTML::script('js/validarLogin.js') }}
+
+	<style>
+		#cursos{
+			color: #FFB80D;
+		}
+	</style>
 </head>
 <body>
 	@include('layout.cabezera')

@@ -17,7 +17,7 @@ $(function(){
 		if($("#txt_email_mobile").val()!="" && $("#txt_password_mobile").val()!=""){
 
 		}else{
-			$("#mensaje_login").css({display:"block"});
+			$("#mensaje_login_mobile").css({display:"block"});
 		}
 
 	});

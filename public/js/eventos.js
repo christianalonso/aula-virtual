@@ -32,11 +32,13 @@ $(function(){
 			setTimeout(function() {
 			    $(".caja-iniciosesion").fadeIn(250);
 			},250);
+			$(".abrir-cajasesion").css({color:"#FFB80D"});
 			show=false;
 		}else{
 			setTimeout(function() {
 			    $(".caja-iniciosesion").fadeOut(250);
 			},250);
+			$(".abrir-cajasesion").css({color:"#fff"});
 			show=true;
 		}
 		
@@ -80,16 +82,22 @@ $(function(){
 	$("#next").click(function(){
 		$(".ventana1").hide("slide", { direction: "left" }, 250);
 		$(".ventana2").show("slide", { direction: "right" }, 300);
+		$("#paso1").css({zoom:"1"});
+		$("#paso2").css({zoom:"1.1"});
 	});
 
 	$("#next2").click(function(){
 		$(".ventana2").hide("slide", { direction: "left" }, 250);
 		$(".ventana3").show("slide", { direction: "right" }, 300);
+		$("#paso2").css({zoom:"1"});
+		$("#paso3").css({zoom:"1.1"});
 	});
 
 	$("#ant").click(function(){
 		$(".ventana2").hide("slide", { direction: "right" }, 250);
 		$(".ventana1").show("slide", { direction: "left" }, 300);
+		$("#paso2").css({zoom:"1"});
+		$("#paso1").css({zoom:"1.1"});
 	});
 
 	$("#notengo_cuenta").attr("checked",true);
@@ -121,6 +129,7 @@ $(function(){
             	setTimeout(function() {
 				    $(".caja-iniciosesion").fadeOut(125);
 				},125);
+				$("#abrir_cajasesion").css({color:"#fff"});
 				$("#txt_email").val("");
 				$("#txt_password").val("");
 				show=true;
@@ -156,14 +165,6 @@ $(function(){
 		}else{
 			alert("tipo de archivo no permitido");
 		}
-
-	});
-
-	$("#entrar").click(function(){
-
-		//alertaDeError("");
-		//alertaDeExito("");
-		//alertaConfirmacion();
 
 	});
 

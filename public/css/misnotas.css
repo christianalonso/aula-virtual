@@ -12,7 +12,7 @@
   font-weight: bold;
   margin-bottom: 15px;
   width: 100%;
-  color: #363333;
+  color: #103046;
 }
 
 .cuadro-notas {
@@ -41,14 +41,12 @@
 .cabezera-cuadro label {
   margin-bottom: 0;
   font-size: 14px;
+  color: #848484;
 }
 
 .bordes {
   width: 100%;
-  border-right: 2px solid #706B6B;
-  border-top: 2px solid #706B6B;
-  border-left: 2px solid #706B6B;
-  border-bottom: 2px solid #706B6B;
+  border: 2px solid #103046;
   display: flex;
 }
 
@@ -62,11 +60,12 @@
 .cuadro-modulo li, .cuadro-puntos li {
   line-height: 3em;
   font-size: 13.5px;
+  color: #848484;
 }
 
 .cuadro-modulo {
   padding-left: 1.5em;
-  border-right: 2px solid #706B6B;
+  border-right: 2px solid #103046;
 }
 
 .cuadro-puntos {
@@ -82,7 +81,7 @@
 .cuadro-cursos, .cuadro-prof {
   width: 100%;
   padding: 0 1em;
-  box-shadow: 0 0 0 1px #706B6B;
+  box-shadow: 0 0 0 2px #103046;
 }
 .cuadro-cursos ul, .cuadro-prof ul {
   list-style: none;
@@ -93,6 +92,7 @@
 .cuadro-cursos li, .cuadro-prof li {
   line-height: 2.5em;
   font-size: 15px;
+  color: #848484;
 }
 
 @media screen and (max-width: 900px) {

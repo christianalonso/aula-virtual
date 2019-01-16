@@ -62,10 +62,10 @@
 .btn-enlace a {
   text-decoration: none;
   padding: .6em .6em;
-  background: #1B1414;
+  background: #103046;
   font-size: 13px;
   border-radius: 15px;
-  color: #fff;
+  color: #FFB80D;
 }
 
 .contenedor-cuadroprofe {
@@ -86,13 +86,13 @@
 .cabezera-cuadro-profesor {
   width: 100%;
   height: 35px;
-  background: #706B6B;
+  background: #FFB80D;
 }
 
 .contenido-cuadro-profesor {
   width: 100%;
   padding: 1.5em 0;
-  background: #363333;
+  background: #103046;
   display: flex;
   flex-wrap: wrap;
 }

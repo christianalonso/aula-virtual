@@ -15,6 +15,11 @@
 	{{ HTML::style('css/pie_pagina.css') }}
 	{{ HTML::script('js/jquery.js') }}
 	{{ HTML::script('js/eventos.js') }}
+	<style>
+		.mark_cursos{
+			background: #E3A100;
+		}
+	</style>
 
 </head>
 <body>

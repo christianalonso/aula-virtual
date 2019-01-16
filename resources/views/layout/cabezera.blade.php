@@ -10,11 +10,11 @@
 		</div>
 		<div class="items">
 				
-				<a href="{{ route('inicio') }}">Inicio</a>
-				<a href="{{ route('cursos') }}">Curso</a>
-				<a href="#">¿Quienes Somos?</a>
-				<a href="{{ route('testimonio') }}">Testimonio</a>
-				<a href="#" id="abrir_cajasesion">Iniciar Sesión</a>
+				<a id="inicio" href="{{ route('inicio') }}">Inicio</a>
+				<a id="cursos" href="{{ route('cursos') }}">Curso</a>
+				<a id="our" href="#">¿Quienes Somos?</a>
+				<a id="testimonio" href="{{ route('testimonio') }}">Testimonio</a>
+				<a href="#" class="abrir-cajasesion" id="abrir_cajasesion">Iniciar Sesión</a>
 				<div class="icono-abrir">
 					<i id="abrir_menu" class="fas fa-bars"></i>
 				</div>
@@ -25,7 +25,7 @@
 				<div class="cajas">
 					<input class="caja-sesion margen" type="text" placeholder="Email - Usuario" id="txt_email" autocomplete="off">
 					<input class="caja-sesion" type="text" placeholder="Contraseña" id="txt_password" autocomplete="off">
-					<small id="mensaje_login">Contraseña o usuario requerido</small>
+					<small id="mensaje_login" class="msjerror-login">Contraseña o usuario requerido</small>
 				</div>
 				<div class="btn-sesion">
 					<button id="entrar">Entrar</button>
@@ -60,9 +60,9 @@
 				<div class="cajas">
 					<input class="caja-sesion margen" type="text" placeholder="Email - Usuario" id="txt_email_mobile" autocomplete="off">
 					<input class="caja-sesion" type="text" placeholder="Contraseña" id="txt_password_mobile" autocomplete="off">
-					<small id="mensaje_login_mobile">Contraseña o usuario requerido</small>
+					<small id="mensaje_login_mobile" class="msjerror-login">Contraseña o usuario requerido</small>
 				</div>
-				<div class="btn-sesion">
+				<div class="btn-sesion color-btnsesion">
 					<button id="entrar_mobile">Entrar</button>
 				</div>
 				<div class="opciones">

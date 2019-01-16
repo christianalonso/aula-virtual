@@ -9,10 +9,11 @@
 
 .registrar {
   width: 920px;
-  background: #363333;
+  background: #FFB80D;
   padding: 1em 1em;
   min-height: 30vh;
   margin: .5em 0;
+  box-shadow: 0 0 10px 0 #FFB80D;
 }
 
 .cabezera-registrar {
@@ -21,7 +22,7 @@
   text-align: center;
   font-size: 25px;
   font-weight: bold;
-  color: #fff;
+  color: #103046;
 }
 
 .body-registrar {
@@ -54,11 +55,12 @@
 .caja-formulario input[type="text"] {
   width: 75%;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid #aaa;
   padding: 0 .6em;
   height: 30px;
   font-size: 15px;
   height: 30px;
+  outline: none;
 }
 .caja-formulario input[type="checkbox"] {
   display: none;
@@ -73,7 +75,8 @@
 }
 .caja-formulario label {
   margin-bottom: 2px;
-  color: #fff;
+  color: #103046;
+  font-weight: bold;
 }
 .caja-formulario .lbl-formulario {
   width: 100%;
@@ -82,11 +85,12 @@
 .password {
   width: 75%;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid #aaa;
   padding: 0 .6em;
   height: 30px;
   font-size: 15px;
   height: 30px;
+  outline: none;
 }
 
 .select {
@@ -151,7 +155,7 @@
 }
 .lbl-radio::before {
   content: "";
-  background: black;
+  background: #103046;
   height: 11px;
   width: 11px;
   position: absolute;
@@ -176,6 +180,7 @@
 .caja-doble {
   min-width: 50px;
   margin-right: 10px;
+  max-width: 200px;
 }
 .caja-doble select {
   width: 120px;
@@ -185,6 +190,9 @@
 }
 .caja-doble:last-child {
   margin-right: 0;
+}
+.caja-doble input {
+  width: 100% !important;
 }
 
 .terminos {
@@ -233,7 +241,7 @@
 .img-square {
   width: 350px;
   height: 320px;
-  background: #706B6B;
+  background: #eee;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -253,7 +261,7 @@
 .agregar {
   width: 25px;
   height: 25px;
-  background: #706B6B;
+  background: #103046;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -264,7 +272,8 @@
 .agregar label {
   margin-bottom: 0;
   font-size: 20px;
-  color: #fff;
+  color: #FFB80D;
+  font-weight: bold;
 }
 .agregar input[type="file"] {
   position: absolute;
@@ -292,7 +301,7 @@
   font-size: 20px;
   outline: none;
   cursor: pointer;
-  background: #706B6B;
+  background: #103046;
   color: #fff;
 }
 

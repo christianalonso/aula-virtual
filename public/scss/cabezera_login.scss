@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
 body,html{
 	height: 100%;
 }
@@ -11,14 +13,14 @@ body{
 }
 .contenedor-cabezera{
 	height: 70px;
-	background: tomato;
+	background: $color_azul;
 	position: fixed;
 	width: 100%;
 	z-index: 50;
 }
 .cabezera{
 	height: 100%;
-	background: #363333;
+	//background: #363333;
 	padding: 0 2em;
 	width: 100%;
 	position: relative;

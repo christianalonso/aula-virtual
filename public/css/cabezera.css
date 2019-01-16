@@ -9,11 +9,11 @@ body {
 
 .contendor-cabezera, .cabezera {
   display: flex;
+  background: #103046;
 }
 
 .contenedor-cabezera {
   height: 70px;
-  background: #363333;
   position: fixed;
   width: 100%;
   z-index: 50;
@@ -24,7 +24,6 @@ body {
 
 .cabezera {
   height: 100%;
-  background: #363333;
   padding: 0 2em;
   width: 100%;
   position: relative;
@@ -58,11 +57,41 @@ body {
   justify-content: flex-end;
   align-items: center;
   overflow: hidden;
+  /*& a:hover:before{
+  	left: 0;
+  	width: 100%;
+  } 
+  & a:hover:after{
+  	left: 0;
+  	width: 100%;
+  } */
 }
 .items a {
   padding: 1.5em 1.5em;
   text-decoration: none;
   color: #fff;
+  font-weight: bold;
+  transition: all .3s ease;
+  position: relative;
+  overflow: hidden;
+  /*&:before, &:after{
+  	content:"";
+  	position: absolute;
+  	width: 0;
+  	background: $color_amarillo;
+  	height: 3px;
+  	left: 50%;
+  	transition:all .3s ease;
+  }
+  &:before{
+  	bottom: 12px;
+  }
+  &:after{
+  	top: 12px;
+  }*/
+}
+.items a:hover {
+  color: #FFB80D !important;
 }
 
 .caja-iniciosesion {
@@ -108,10 +137,11 @@ body {
   font-size: 14px;
   padding: 0 .3em;
   height: 32px;
+  border: 1px solid #aaa;
 }
 .cajas small {
   color: #dc3545;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .btn-sesion {
@@ -123,9 +153,15 @@ body {
   padding: .2em 2em;
   border-radius: 20px;
   outline: none;
-  background: #363333;
+  background: #103046;
   border: none;
-  color: #fff;
+  color: #FFB80D;
+}
+
+.color-btnsesion button {
+  background: #FFB80D;
+  color: #103046;
+  font-weight: bold;
 }
 
 .opciones {
@@ -134,7 +170,7 @@ body {
   flex-wrap: wrap;
 }
 .opciones a {
-  color: #363333;
+  color: #103046;
   text-decoration: none;
   width: 100%;
   font-size: 15px;
@@ -155,7 +191,7 @@ body {
 .menu-responsive {
   width: 320px;
   height: 100%;
-  background: white;
+  background: #103046;
   padding: 0 .5em;
   padding-top: .5em;
 }
@@ -188,13 +224,14 @@ body {
   padding: 1em 0;
   color: black;
   font-weight: bold;
+  color: #fff;
 }
 .items-menu-responsive a i {
   padding-right: .6em;
 }
 .items-menu-responsive li {
   padding-left: .5em;
-  border-bottom: 0.5px solid black;
+  border-bottom: 0.5px solid #fff;
 }
 
 .icono-cerrar, .icono-abrir {
@@ -212,6 +249,14 @@ body {
 .icono-abrir {
   display: none;
   color: #fff;
+}
+
+.icono-cerrar {
+  color: #fff;
+}
+
+.msjerror-login {
+  font-size: 12px;
 }
 
 @media screen and (max-width: 1000px) {

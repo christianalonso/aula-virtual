@@ -1,10 +1,13 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
+$color_letra:darken(#aaa,15);
 
 .contenedor-contactopag{
 	width: 100%;
-	background: $plomo3;
+	background: lighten($color_azul,5);
 	display: flex;
 	flex-wrap:wrap;
 	justify-content:center;
@@ -13,7 +16,7 @@ $plomo3:#706B6B;
 .contenedor-contacto{
 	width: 100%;
 	padding: 1em .5em;
-	background: $plomo3;
+	background: lighten($color_azul,5);
 	display: flex;
 	flex-wrap:wrap;
 	max-width: 1500px;
@@ -21,10 +24,9 @@ $plomo3:#706B6B;
 }
 .redes-sociales,.contacto,.consulta{
 	width: 33.33%;
-	background: red;
 	padding: 1.5em 0;
 	padding-left: 2.5em;
-	background: $plomo3;
+	//background: $plomo3;
 }
 .contacto{
 	border-left: 1px solid #fff;
@@ -137,10 +139,11 @@ $plomo3:#706B6B;
 	font-size: 13px;
 	padding: .2em .8em;
 	border: none;
-	background: $plomo1;
-	color: #fff;
+	background: $color_amarillo;
+	color: $color_azul;
 	border-radius:2px;
 	cursor: pointer;
+	font-weight: bold;
 }
 
 @media screen and(max-width: 1000px) {

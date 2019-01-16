@@ -1,6 +1,9 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
+$color_letra:darken(#aaa,15);
 
 .contenedor-registro{
 	width: 100%;
@@ -13,10 +16,11 @@ $plomo3:#706B6B;
 .registrar{
 	width: 920px;
 	//background: steelblue;
-	background: $plomo1;
+	background:$color_amarillo;
 	padding: 1em 1em;
 	min-height: 30vh;
 	margin:.5em 0;
+	box-shadow: 0 0 10px 0 $color_amarillo;
 }
 .cabezera-registrar{
 	width: 100%;
@@ -25,7 +29,7 @@ $plomo3:#706B6B;
 	font-size: 25px;
 	font-weight: bold;
 	//background: orange;
-	color: #fff;
+	color: $color_azul;
 }
 .body-registrar{
 	width: 100%;
@@ -57,11 +61,12 @@ $plomo3:#706B6B;
 	& input[type="text"]{
 		width: 75%;
 		border-radius: 10px;
-		border: 1px solid black;
+		border: 1px solid #aaa;
 		padding: 0 .6em;
 		height: 30px;
 		font-size: 15px;
 		height: 30px;
+		outline: none;
 	}
 	& input[type="checkbox"]{
 		display: none;
@@ -73,26 +78,27 @@ $plomo3:#706B6B;
 		width: 62px;
 		outline: none;
 		position: relative;
-
-
 	}
 	& label{
 		margin-bottom: 2px;
-		color: #fff;
+		color: $color_azul;
+		font-weight: bold;
 	}
-	.lbl-formulario{
+	& .lbl-formulario{
 		width: 100%;
+		
 	}
 
 }
 .password{
 	width: 75%;
 	border-radius: 10px;
-	border: 1px solid black;
+	border: 1px solid #aaa;
 	padding: 0 .6em;
 	height: 30px;
 	font-size: 15px;
 	height: 30px;
+	outline: none;
 }
 
 .select{
@@ -100,8 +106,6 @@ $plomo3:#706B6B;
 	min-height: 32px;
 	//background: tomato;
 	position: relative;
-
-
 	&:last-child{
 		margin-right: 0;
 	}
@@ -161,7 +165,7 @@ $plomo3:#706B6B;
 	}
 	&::before{
 		content:"";
-		background: black;
+		background: $color_azul;
 		height: 11px;
 		width: 11px;
 		position: absolute;
@@ -188,8 +192,8 @@ $plomo3:#706B6B;
 }
 .caja-doble{
 	min-width: 50px;
-	//background: red;
 	margin-right: 10px;
+	max-width: 200px;
 
 	& select{
 		width: 120px;
@@ -202,7 +206,9 @@ $plomo3:#706B6B;
 	&:last-child{
 		margin-right: 0;
 	}
-	
+	& input{
+		width: 100% !important;
+	}
 }
 .terminos{
 	width: 100%;
@@ -254,7 +260,7 @@ $plomo3:#706B6B;
 .img-square{
 	width: 350px;
 	height: 320px;
-	background:$plomo3;
+	background:#eee;
 	border-radius: 10px;
 	overflow: hidden;
 	& img{
@@ -274,7 +280,7 @@ $plomo3:#706B6B;
 .agregar{
 	width: 25px;
 	height: 25px;
-	background: $plomo3;
+	background: $color_azul;
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -285,7 +291,8 @@ $plomo3:#706B6B;
 	& label{
 		margin-bottom:0;
 		font-size: 20px; 
-		color: #fff;
+		color: $color_amarillo;
+		font-weight: bold;
 	}
 	
 	& input[type="file"]{
@@ -318,11 +325,10 @@ $plomo3:#706B6B;
 		font-size: 20px;
 		outline: none;
 		cursor: pointer;
-		background: $plomo3;
+		background: $color_azul;
 		color: #fff;
 	}
 }
-
 
 @media screen and(max-width: 1100px){
 	.formulario-registrar{

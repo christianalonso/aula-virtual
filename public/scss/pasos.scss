@@ -1,6 +1,9 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
+$color_letra:darken(#aaa,15);
 
 .contenedor-pasos,.contenedor-info-pasos{
 	width: 100%;
@@ -18,16 +21,22 @@ $plomo3:#706B6B;
 	overflow: hidden;
 	width: 100%;
 }
+#paso1{
+	zoom:1.1;
+}
 .pasos{
 	width: 105px;
 	height: 80px;
-	background: #fff;
+	background: lighten($color_azul,5);
 	margin-right: 20px;
 	position: relative;
 	overflow: hidden;
-	border-top: 1px solid black;
-	border-left: 1px solid black;
-	border-bottom: 1px solid black;
+	border-top: 1px solid $color_amarillo;
+	border-left: 1px solid $color_amarillo;
+	border-bottom: 1px solid $color_amarillo;
+	z-index: 1;
+	color: $color_amarillo;
+	transition: all .5s ease;
 		
 	& input[type="radio"]{
 		display: none;
@@ -55,8 +64,9 @@ $plomo3:#706B6B;
 		background: #fff;
 		left: 80px;
 		-webkit-transform: rotate(45deg);
-		border-left: 1px solid black;
-		border-bottom: 1px solid black;
+		border-left: 1px solid $color_amarillo;
+		border-bottom: 1px solid $color_amarillo;
+		z-index: 10;
 	}
 
 }
@@ -71,16 +81,16 @@ $plomo3:#706B6B;
 	width: 850px;
 }
 .info-paso1, .info-paso2, .info-paso3{
-
-	background: #fff;
+	background: $color_amarillo;
 	display: flex;
 	flex-wrap:wrap;
 	padding: .5em .6em;
 	position: relative;
-	box-shadow: 0 0 0 1px black;
+	box-shadow: 0 0 0 1px $color_amarillo;
 	width: 850px;
 	margin-bottom: 3em;
 	transition: all .5s ease !important;
+	color: $color_azul;
 }
 .info-paso2,.info-paso3{
 }
@@ -124,7 +134,7 @@ $plomo3:#706B6B;
 	& li{
 		padding-left: 10px;
 		padding-top: 2px;
-		border-bottom: 1px solid $plomo3;
+		border-bottom: 1px solid #fff;
 		font-size: 14px;
 		position: relative;
 
@@ -133,6 +143,7 @@ $plomo3:#706B6B;
 			font-size: 5px;
 			top: 13px;
 			right: 15px;
+			color: #fff;
 		}
 	}
 
@@ -160,7 +171,7 @@ $plomo3:#706B6B;
 	width: 120px;
 	height: 110px;
 	padding: .5em .5em;
-	background: black;
+	background: #eee;
 
 	& img{
 		width: 100%;
@@ -173,6 +184,10 @@ $plomo3:#706B6B;
 	display: flex;
 	justify-content:flex-end;
 	position: relative;
+
+	& button{
+		outline: none;
+	}
 }
 .btn-pasos{
 	padding: 0 1em;
@@ -183,7 +198,8 @@ $plomo3:#706B6B;
 	align-self:flex-end;
 	font-size: 15px;
 	cursor: pointer;
-
+	background: $color_azul;
+	color: $color_amarillo;
 	&:last-child{
 		margin-right: 0;
 	}
@@ -240,7 +256,7 @@ $plomo3:#706B6B;
 	height: 25px;
 	background: #fff;
 	margin-right: .5em;
-	border: 1px solid black;
+	border: 1px solid #aaa;
 	position: relative;
 	box-sizing:border-box;
 	border-radius: 8px;
@@ -274,9 +290,10 @@ $plomo3:#706B6B;
 		font-size: 25px;
 		right: 0;
 		pointer-events:none;
-		border-left: 1px solid black;
+		border-left: 1px solid #aaa;
 		border-top-right-radius: 8px;
 		border-bottom-right-radius: 8px;
+		color: #aaa;
 	}
 }
 .aceptar{
@@ -350,7 +367,9 @@ $plomo3:#706B6B;
 	width: 60%;
 	font-size: 14px;
 	padding: 0 .5em;
-	border: 1px solid $plomo2;
+	border: 1px solid #aaa;
+	outline: none;
+
 }
 .division{
 	//background: pink;
@@ -373,7 +392,7 @@ $plomo3:#706B6B;
 		width: 100%;
 		font-size: 14px;
 		padding: 0 .5em;
-		border: 1px solid $plomo2;
+		border: 1px solid #aaa;
 	}
 }
 #paso1:checked ~label{

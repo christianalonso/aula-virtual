@@ -1,6 +1,9 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
+$color_letra:darken(#aaa,15);
 .datos{
 	background: white;
 	width: 100%;
@@ -8,6 +11,7 @@ $plomo3:#706B6B;
 	display: flex;
 	flex-wrap:wrap;
 	max-width: 1500px;
+
 }
 .campos,.foto{
 	width: 50%;
@@ -20,11 +24,17 @@ $plomo3:#706B6B;
 	//background: coral;
 	padding-top: 3em;
 	padding-left: 2em;
+
+	& small{
+		color: $color_letra;
+	}
 }
 .title-datos{
-	font-size: 18px;
+	font-size: 20px;
 	width: 100%;
 	margin-bottom: 25px;
+	color: $color_azul;
+	font-weight: bold;
 }
 .campo-dato{
 	width: 100%;
@@ -32,42 +42,46 @@ $plomo3:#706B6B;
 	padding: .2em 0;
 	padding-left: 5.5em;
 
-	& label, .txt-dato,.btn-dato{
+	& label,.btn-dato{
 		font-size: 15px;
 	}
 	& label{
 		width: 100%;
 		margin-bottom: 4px;
 		font-weight: bold;
+		color: $color_azul;
 	}
 	& .txt-dato,.btn-dato{
 		border-radius: 5px;
 	}
 	& .txt-dato{
 		width: 70%;
-		//min-width: 250px;
 		max-width: 330px;
 		height: 25px;
 		padding: .4em .3em;
-		border: 1px solid $plomo3;
+		border: 1px solid $color_letra;
 		min-width: 250px;
+		font-size: 14px;
+		outline: none;
+		//color:#333;
 	}
 	& .btn-dato{
 		margin: 1.5em 0;
 		border:none;
 		padding: .2em .8em;
 		color: #fff;
-		background: $plomo1;
+		background: $color_azul;
 		cursor: pointer;
 	}
 }
 .margen-foto{
 	width: 220px;
 	height: 190px;
-	background: $plomo3;
+	background: $color_azul;
 	padding: 0 .8em;
 	padding-top: .8em;
 	border-radius: 20px;
+
 }
 
 .foto-usuario{
@@ -96,7 +110,7 @@ $plomo3:#706B6B;
 .agregar{
 	width: 25px;
 	height: 25px;
-	background: $plomo2;
+	background: $color_amarillo;
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -107,7 +121,8 @@ $plomo3:#706B6B;
 	& label{
 		margin-bottom:0;
 		font-size: 20px; 
-		color: #fff;
+		color: $color_azul;
+		font-weight: bold;
 	}
 	
 	& input[type="file"]{

@@ -13,7 +13,7 @@ body {
 
 .contenedor-cabezera {
   height: 70px;
-  background: tomato;
+  background: #103046;
   position: fixed;
   width: 100%;
   z-index: 50;
@@ -21,7 +21,6 @@ body {
 
 .cabezera {
   height: 100%;
-  background: #363333;
   padding: 0 2em;
   width: 100%;
   position: relative;

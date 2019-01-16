@@ -14,6 +14,13 @@
 	{{ HTML::script('js/jquery.js') }}
 	{{ HTML::script('js/eventos.js') }}
 	{{ HTML::script('js/validarLogin.js') }}
+
+	<style>
+		#testimonio{
+			color: #FFB80D;
+		}
+	</style>
+
 </head>
 <body>
 	@include('layout.cabezera')
@@ -48,7 +55,9 @@
 						<div class="testimonio">
 							<label for="">Jose Antonio Muños Torres</label>
 							<p>Excelentes cursos, excelentes profesores</p>
-							<div class="circulo"></div>
+							<div class="circulo">
+								{{ HTML::image('images/img10.jpg') }}
+							</div>
 						</div>
 
 					</div>
@@ -57,7 +66,9 @@
 						<div class="testimonio">
 							<label for="">Jose Antonio Muños Torres</label>
 							<p>Excelentes cursos, excelentes profesores</p>
-							<div class="circulo"></div>
+							<div class="circulo">
+								{{ HTML::image('images/img10.jpg') }}
+							</div>
 						</div>
 
 
@@ -67,7 +78,9 @@
 						<div class="testimonio">
 							<label for="">Jose Antonio Muños Torres</label>
 							<p>Excelentes cursos, excelentes profesores</p>
-							<div class="circulo"></div>
+							<div class="circulo">
+								{{ HTML::image('images/img10.jpg') }}
+							</div>
 						</div>
 
 					</div>
@@ -76,7 +89,9 @@
 						<div class="testimonio">
 							<label for="">Jose Antonio Muños Torres</label>
 							<p>Excelentes cursos, excelentes profesores</p>
-							<div class="circulo"></div>
+							<div class="circulo">
+								{{ HTML::image('images/img10.jpg') }}
+							</div>
 						</div>
 
 					</div>

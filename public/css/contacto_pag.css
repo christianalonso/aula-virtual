@@ -1,6 +1,6 @@
 .contenedor-contactopag {
   width: 100%;
-  background: #706B6B;
+  background: #153e5b;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -10,7 +10,7 @@
 .contenedor-contacto {
   width: 100%;
   padding: 1em .5em;
-  background: #706B6B;
+  background: #153e5b;
   display: flex;
   flex-wrap: wrap;
   max-width: 1500px;
@@ -19,10 +19,8 @@
 
 .redes-sociales, .contacto, .consulta {
   width: 33.33%;
-  background: red;
   padding: 1.5em 0;
   padding-left: 2.5em;
-  background: #706B6B;
 }
 
 .contacto {
@@ -134,10 +132,11 @@
   font-size: 13px;
   padding: .2em .8em;
   border: none;
-  background: #363333;
-  color: #fff;
+  background: #FFB80D;
+  color: #103046;
   border-radius: 2px;
   cursor: pointer;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1000px) {

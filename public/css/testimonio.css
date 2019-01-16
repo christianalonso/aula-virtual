@@ -30,13 +30,15 @@
 }
 
 .btn-tipoenlace {
-  background: #363333;
+  background: #103046;
   color: #fff;
-  padding: .5em 1em;
+  padding: .4em 1em;
   border-radius: 50px;
+  font-size: 15px;
+  color: #FFB80D;
 }
 .btn-tipoenlace:hover {
-  color: #fff;
+  color: #FFB80D;
   text-decoration: none;
 }
 
@@ -51,6 +53,7 @@
   font-size: 18px;
   font-weight: bold;
   text-align: center;
+  color: #103046;
 }
 .title-items label {
   margin-bottom: 0;
@@ -68,7 +71,7 @@
   padding: 1em 4em;
 }
 .caja-testimonio:nth-child(odd) {
-  border-right: 1px solid #504C4C;
+  border-right: 1px solid #103046;
 }
 
 .testimonio {
@@ -76,7 +79,8 @@
   background: #fff;
   padding: .8em .5em;
   position: relative;
-  box-shadow: 0 0 0 1px #504C4C inset;
+  box-shadow: 0 0 0 1px #FFB80D inset;
+  color: #848484;
 }
 .testimonio label, .testimonio p {
   padding-left: .6em;
@@ -97,7 +101,7 @@
   content: "";
   width: 100%;
   height: 22px;
-  background: #504C4C;
+  background: #FFB80D;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -111,7 +115,12 @@
   right: 40px;
   top: 10px;
   border-radius: 50px;
-  transition: all .5s ease;
+  overflow: hidden;
+}
+.circulo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 1200px) {

@@ -62,7 +62,7 @@
 							</div>
 						</div>
 						<div class="caja-formulario">
-							<label>Sexo :</label>
+							<label class="lbl-def-radio">Sexo :</label>
 							<div class="radio">
 								<input type="radio" name="sexo" id="m">
 								<label for="m" class="lbl-radio">M</label>

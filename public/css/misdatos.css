@@ -15,11 +15,16 @@
   padding-top: 3em;
   padding-left: 2em;
 }
+.foto small {
+  color: #848484;
+}
 
 .title-datos {
-  font-size: 18px;
+  font-size: 20px;
   width: 100%;
   margin-bottom: 25px;
+  color: #103046;
+  font-weight: bold;
 }
 
 .campo-dato {
@@ -27,13 +32,14 @@
   padding: .2em 0;
   padding-left: 5.5em;
 }
-.campo-dato label, .campo-dato .txt-dato, .campo-dato .btn-dato {
+.campo-dato label, .campo-dato .btn-dato {
   font-size: 15px;
 }
 .campo-dato label {
   width: 100%;
   margin-bottom: 4px;
   font-weight: bold;
+  color: #103046;
 }
 .campo-dato .txt-dato, .campo-dato .btn-dato {
   border-radius: 5px;
@@ -43,22 +49,24 @@
   max-width: 330px;
   height: 25px;
   padding: .4em .3em;
-  border: 1px solid #706B6B;
+  border: 1px solid #848484;
   min-width: 250px;
+  font-size: 14px;
+  outline: none;
 }
 .campo-dato .btn-dato {
   margin: 1.5em 0;
   border: none;
   padding: .2em .8em;
   color: #fff;
-  background: #363333;
+  background: #103046;
   cursor: pointer;
 }
 
 .margen-foto {
   width: 220px;
   height: 190px;
-  background: #706B6B;
+  background: #103046;
   padding: 0 .8em;
   padding-top: .8em;
   border-radius: 20px;
@@ -90,7 +98,7 @@
 .agregar {
   width: 25px;
   height: 25px;
-  background: #504C4C;
+  background: #FFB80D;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +109,8 @@
 .agregar label {
   margin-bottom: 0;
   font-size: 20px;
-  color: #fff;
+  color: #103046;
+  font-weight: bold;
 }
 .agregar input[type="file"] {
   position: absolute;

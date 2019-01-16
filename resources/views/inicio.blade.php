@@ -17,7 +17,11 @@
 	<!--{{ HTML::script('alertifyjs/alertify.js') }}
 	{{ HTML::style('alertifyjs/css/alertify.css') }}
 	{{ HTML::script('js/alertas.js') }}-->
-
+	<style>
+		#inicio{
+			color: #FFB80D;
+		}
+	</style>
 
 </head>
 <body>

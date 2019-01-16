@@ -14,16 +14,23 @@
   width: 100%;
 }
 
+#paso1 {
+  zoom: 1.1;
+}
+
 .pasos {
   width: 105px;
   height: 80px;
-  background: #fff;
+  background: #153e5b;
   margin-right: 20px;
   position: relative;
   overflow: hidden;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 1px solid #FFB80D;
+  border-left: 1px solid #FFB80D;
+  border-bottom: 1px solid #FFB80D;
+  z-index: 1;
+  color: #FFB80D;
+  transition: all .5s ease;
 }
 .pasos input[type="radio"] {
   display: none;
@@ -48,8 +55,9 @@
   background: #fff;
   left: 80px;
   -webkit-transform: rotate(45deg);
-  border-left: 1px solid black;
-  border-bottom: 1px solid black;
+  border-left: 1px solid #FFB80D;
+  border-bottom: 1px solid #FFB80D;
+  z-index: 10;
 }
 
 .ventana2, .ventana3 {
@@ -62,15 +70,16 @@
 }
 
 .info-paso1, .info-paso2, .info-paso3 {
-  background: #fff;
+  background: #FFB80D;
   display: flex;
   flex-wrap: wrap;
   padding: .5em .6em;
   position: relative;
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 0 1px #FFB80D;
   width: 850px;
   margin-bottom: 3em;
   transition: all .5s ease !important;
+  color: #103046;
 }
 
 .info-curso-paso1, .contenedor-modulo {
@@ -101,7 +110,7 @@
 .modulos li {
   padding-left: 10px;
   padding-top: 2px;
-  border-bottom: 1px solid #706B6B;
+  border-bottom: 1px solid #fff;
   font-size: 14px;
   position: relative;
 }
@@ -110,6 +119,7 @@
   font-size: 5px;
   top: 13px;
   right: 15px;
+  color: #fff;
 }
 
 .content-square {
@@ -131,7 +141,7 @@
   width: 120px;
   height: 110px;
   padding: .5em .5em;
-  background: black;
+  background: #eee;
 }
 .square-full img {
   width: 100%;
@@ -144,6 +154,9 @@
   justify-content: flex-end;
   position: relative;
 }
+.botones button {
+  outline: none;
+}
 
 .btn-pasos {
   padding: 0 1em;
@@ -154,6 +167,8 @@
   align-self: flex-end;
   font-size: 15px;
   cursor: pointer;
+  background: #103046;
+  color: #FFB80D;
 }
 .btn-pasos:last-child {
   margin-right: 0;
@@ -210,7 +225,7 @@
   height: 25px;
   background: #fff;
   margin-right: .5em;
-  border: 1px solid black;
+  border: 1px solid #aaa;
   position: relative;
   box-sizing: border-box;
   border-radius: 8px;
@@ -244,9 +259,10 @@
   font-size: 25px;
   right: 0;
   pointer-events: none;
-  border-left: 1px solid black;
+  border-left: 1px solid #aaa;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  color: #aaa;
 }
 
 .aceptar {
@@ -318,7 +334,8 @@
   width: 60%;
   font-size: 14px;
   padding: 0 .5em;
-  border: 1px solid #504C4C;
+  border: 1px solid #aaa;
+  outline: none;
 }
 
 .division {
@@ -341,7 +358,7 @@
   width: 100%;
   font-size: 14px;
   padding: 0 .5em;
-  border: 1px solid #504C4C;
+  border: 1px solid #aaa;
 }
 
 #paso1:checked ~ label {

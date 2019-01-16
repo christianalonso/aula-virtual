@@ -21,15 +21,16 @@
 	<div class="contenedor">
 		
 		<div class="contenedor-pasos">
-			<div class="pasos">
+
+			<div class="pasos" id="paso1">
 				<!--<input type="radio" id="paso1" name="paso">-->
 				<label for="paso1">Paso 1</label>
 			</div>
-			<div class="pasos">
+			<div class="pasos _paso2" id="paso2">
 				<!--<input type="radio" id="paso2" name="paso">-->
 				<label for="paso2">Paso 2</label>
 			</div>
-			<div class="pasos">
+			<div class="pasos _paso3" id="paso3">
 				<!--<input type="radio" id="paso3" name="paso"> -->
 				<label for="paso3">Paso 3</label>
 			</div>
@@ -174,7 +175,7 @@
 							<div class="login-frm2">
 								<div class="cajas-frmpaso2">
 									<label class="lbl-login">Usuario<span>:</span></label>
-									<input type="text" class="txt-paso2" placeholder="Apellido">
+									<input type="text" class="txt-paso2" placeholder="Usuario">
 								</div>
 								<div class="cajas-frmpaso2">
 									<label class="lbl-login">Contraseña<span>:</span></label>

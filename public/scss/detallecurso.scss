@@ -1,6 +1,10 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
+$color_letra:darken(#aaa,15);
+
 .caja-cursos{
 	padding: 2em 0;
 	background: #fff;
@@ -10,7 +14,7 @@ $plomo3:#706B6B;
 }
 .cabezera-informacion-vacia,.cabezera-informacion{
 	width: 100%;
-	background: $plomo2;
+	background: lighten($color_azul,5);
 	overflow: hidden;
 }
 .cabezera-informacion-vacia{
@@ -36,13 +40,13 @@ $plomo3:#706B6B;
 	}
 }
 .lbl-informacion{
-	//background: orange;
 	padding: .2em 1.5em;
-	box-shadow: 0 0 0 1px #363333;
+	box-shadow: 0 0 0 1px $color_amarillo;
 	border-radius: 12px;
 	font-size: 13px;
-	color: #363333;
-	background: #fff;
+	color: $color_azul;
+	background: $color_amarillo;
+	font-weight: bold;
 
 	& i{
 		font-size: 11px;
@@ -61,7 +65,7 @@ $plomo3:#706B6B;
 	display: flex;
 }
 .bordes{
-	box-shadow: 0 0 0 2px $plomo3;
+	box-shadow: 0 0 0 2px $color_azul;
 	display: flex;
 	flex-wrap:wrap;
 	width: 80%;
@@ -79,6 +83,9 @@ $plomo3:#706B6B;
 		list-style: none;
 		padding: 0;
 	}
+	& label,li{
+		color: $color_letra;
+	}
 	& li{
 		font-size: 13px;
 		line-height: 1.7em;
@@ -94,7 +101,7 @@ $plomo3:#706B6B;
 }
 .cuadro1{
 	//background: skyblue;
-	border-right: 2px solid $plomo3;
+	border-right: 2px solid $color_azul;
 }
 .cuadro2{
 	//background: steelblue;
@@ -120,9 +127,10 @@ $plomo3:#706B6B;
 	& li{
 		padding-left: 10px;
 		padding-top: 10px;
-		border-bottom: 1px solid $plomo3;
+		border-bottom: 1px solid $color_azul;
 		font-size: 15px;
 		position: relative;
+		color: $color_letra;
 
 		& i{
 			position: absolute;

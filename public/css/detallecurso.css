@@ -8,7 +8,7 @@
 
 .cabezera-informacion-vacia, .cabezera-informacion {
   width: 100%;
-  background: #504C4C;
+  background: #153e5b;
   overflow: hidden;
 }
 
@@ -35,11 +35,12 @@
 
 .lbl-informacion {
   padding: .2em 1.5em;
-  box-shadow: 0 0 0 1px #363333;
+  box-shadow: 0 0 0 1px #FFB80D;
   border-radius: 12px;
   font-size: 13px;
-  color: #363333;
-  background: #fff;
+  color: #103046;
+  background: #FFB80D;
+  font-weight: bold;
 }
 .lbl-informacion i {
   font-size: 11px;
@@ -58,7 +59,7 @@
 }
 
 .bordes {
-  box-shadow: 0 0 0 2px #706B6B;
+  box-shadow: 0 0 0 2px #103046;
   display: flex;
   flex-wrap: wrap;
   width: 80%;
@@ -77,6 +78,9 @@
   list-style: none;
   padding: 0;
 }
+.cuadro1 label, .cuadro1 li, .cuadro2 label, .cuadro2 li {
+  color: #848484;
+}
 .cuadro1 li, .cuadro2 li {
   font-size: 13px;
   line-height: 1.7em;
@@ -89,7 +93,7 @@
 }
 
 .cuadro1 {
-  border-right: 2px solid #706B6B;
+  border-right: 2px solid #103046;
 }
 
 .contenedor-modulo {
@@ -110,9 +114,10 @@
 .modulos li {
   padding-left: 10px;
   padding-top: 10px;
-  border-bottom: 1px solid #706B6B;
+  border-bottom: 1px solid #103046;
   font-size: 15px;
   position: relative;
+  color: #848484;
 }
 .modulos li i {
   position: absolute;

@@ -1,10 +1,13 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
+$color_letra:darken(#aaa,15);
 .pie-pagina{
 	width: 100%;
 	height: 45px;
-	background: $plomo2;
+	background: $color_amarillo;
 	display: flex;
 	justify-content:center;
 	align-items:center;
@@ -13,6 +16,7 @@ $plomo3:#706B6B;
 	& label{
 		margin-bottom: 0;
 		font-size: 15px;
-		color: #ffffff;
+		color: $color_azul;
+		font-weight: bold;
 	}
 }

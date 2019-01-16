@@ -1,11 +1,13 @@
 $plomo1:#363333;
 $plomo2:#504C4C;
 $plomo3:#706B6B;
+$color_azul:#103046;
+$color_amarillo:#FFB80D;
 .menu{
 	width: 220px;
 	height: 100%;
 	position: fixed;
-	background: $plomo3;
+	background: $color_amarillo;
 	transition: all .5s ease;
 	z-index: 1;
 	display: block;
@@ -15,7 +17,7 @@ $plomo3:#706B6B;
 	height: 180px;
 	//background: blue;
 	padding: .9em 0;
-	border-bottom: 1px solid #fff;
+	border-bottom: 1px solid #eee;
 }
 .contenedor-imgusuario,.img-usuario{
 	width: 100%;
@@ -32,13 +34,20 @@ $plomo3:#706B6B;
 	height: 90px;
 	background: #fff;
 	border-radius: 50px;
+	overflow: hidden;
+	& img{
+		width: 100%;
+		height: 100%;
+		object-fit:cover;
+	}
 }
 .tipo-usuario{
 	height: 30px;
 	//background: steelblue;
 	text-align: center;
 	font-size: 18px;
-	color: #fff;
+	color: $color_azul;
+	font-weight: bold;
 }
 .menu-items{
 	padding: .9em 0;
@@ -55,17 +64,24 @@ $plomo3:#706B6B;
 		list-style: none;
 		padding-left: 2.8em;
 		line-height: 2.8em;
+		transition: .2s;
+	}
+	li:hover{
+		background: darken($color_amarillo,8);
 	}
 	& a{
 		display: block;
 		text-decoration: none;
-		color: #fff;
+		font-weight: bold;
 
 		& i{
 			position: relative;
 			top: -3px;
 			font-size: 9px;
 		}
+	}
+	& a,i{
+		color: $color_azul;
 	}
 }
 @media screen and(max-width: 800px){
